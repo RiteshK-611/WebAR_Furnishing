@@ -1,8 +1,8 @@
 import { Container, Grid, Card, CardActions, CardActionArea, CardContent, CardMedia, Typography, Button } from '@material-ui/core'
-import { products } from '../../constants/data'
+//import { products } from '../../constants/data'
 import useStyle from './styles/midSectionStyle'
 
-const MidSection = () => {
+const MidSection = ({products}) => {
     const classes = useStyle();
     return (
         <Container className={classes.cardGrid}>
