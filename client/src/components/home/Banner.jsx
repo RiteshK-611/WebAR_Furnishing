@@ -1,8 +1,7 @@
-import { makeStyles } from '@material-ui/core'
 import Carousel from 'react-material-ui-carousel'
 import { bannerData } from '../../constants/data'
-
-const useStyle = makeStyles({
+import useStyle from './styles/BannerStyle';
+/* const useStyle = makeStyles({
     carousel: {
         marginTop: 70,
     },
@@ -10,7 +9,7 @@ const useStyle = makeStyles({
         width: '100%',
         height: 300
     }
-})
+}) */
 
 const Banner = () => {
     const classes = useStyle();

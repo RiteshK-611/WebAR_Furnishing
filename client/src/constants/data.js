@@ -1,8 +1,11 @@
+import b1 from '../images/b1.jpg'
+import b2 from '../images/b2.jpeg'
+import b3 from '../images/b3.jpg'
+import b4 from '../images/b4.jpg'
+import b5 from '../images/b5.jpg'
+
 export const bannerData = [
-    'https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50',
-    'https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50',
-    'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50',
-    'https://rukminim1.flixcart.com/flap/3376/560/image/f6202f13b6f89b03.jpg?q=50'
+    b1, b2, b3, b4, b5
 ];
 
 export const products = [

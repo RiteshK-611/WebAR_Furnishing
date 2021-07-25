@@ -1,46 +1,38 @@
-import { Box, Button, Typography, Badge, makeStyles } from '@material-ui/core'
+import { Box, Button, Typography, Badge } from '@material-ui/core'
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import { Link } from 'react-router-dom'
-
-const useStyle = makeStyles({
-    login: {
-        background: '#fff',
-        color: '#2874f0',
-        fontWeight: '600',
-        padding: 2,
-        textTransform: 'none',
-    },
-    wrapper: {
-        margin: '0 4% 0 auto',
-        display: 'flex',
-        '& > *': {
-            marginRight: 50,
-            fontsize: 12,
-            display: 'flex',
-            alignItems: 'center',
-            textDecoration: 'none',
-            color: '#fff'
-        }
-    },
-    cart: {
-        marginLeft: 10,
-    },
-    container: {
-        display: 'flex'
-    }
-})
+import useStyle from './styles/HeaderButtonsStyle'
+import LoginDialog from '../login/login'
+import { LoginContext } from '../../context/ContextProvider';
+import { useState, useContext } from 'react';
+import Profile from './Profile';
 
 const HeaderButtons = () => {
     const classes = useStyle();
+    const [open, setOpen] = useState(false);
+    const { account, setAccount } = useContext(LoginContext);
+
+    const handleOpenLoginDialog = () => {
+        setOpen(true);
+    }
+    
+
     return (
         <Box className={classes.wrapper}>
-            <Link to='/login'><Button variant="contained" className={classes.login}>Login</Button></Link>
-            <Link to='/cart' className={classes.container}>
+            {
+                account ? <Profile account={account} setAccount={setAccount} /> : 
+                <Link>
+                    <Button className={classes.login} variant="contained" onClick={() => handleOpenLoginDialog() }>Login</Button>
+                </Link>
+            }
+            {/* <Link ><Button variant="contained" onClick={handleOpenLoginDialog} className={classes.login}>Login</Button></Link>
+             */}<Link to='/cart' className={classes.container}>
                 <Badge badgeContent={4} color="secondary">
                     <ShoppingCartRoundedIcon />
                 </Badge>
                 <Typography className={classes.cart}>Cart</Typography>
             </Link>
+            <LoginDialog open={open} setOpen={setOpen} setAccount={setAccount} />
         </Box>
     )
 }

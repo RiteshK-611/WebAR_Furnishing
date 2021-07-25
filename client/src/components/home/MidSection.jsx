@@ -1,34 +1,6 @@
-import { Container, Grid, Card, CardActions, CardActionArea, CardContent, CardMedia, Typography, Button, makeStyles } from '@material-ui/core'
+import { Container, Grid, Card, CardActions, CardActionArea, CardContent, CardMedia, Typography, Button } from '@material-ui/core'
 import { products } from '../../constants/data'
-
-const useStyle = makeStyles((theme) => ({
-    icon: {
-        marginRight: 20,
-    },
-    button: {
-        marginBottom: 10,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    cardGrid: {
-        padding: '20px 0',
-    },
-    card: {
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center'
-    },
-    cardMedia: {
-        height: 250,
-        width: '100%',
-        objectFit: 'contain',
-        padding: 15
-    },
-    cardContent: {
-        flexGrow: 1
-    }
-}))
+import useStyle from './styles/midSectionStyle'
 
 const MidSection = () => {
     const classes = useStyle();

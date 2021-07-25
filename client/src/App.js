@@ -2,19 +2,28 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Header from './components/header/Header';
 import Home from './components/home/Home';
-import Cart from './components/cart/Cart'
+import Cart from './components/cart/Cart';
+import { Box } from '@material-ui/core'
+import TemplateProvider from './templates/TemplateProvider';
+import ContextProvider from './context/ContextProvider';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/cart" component={Cart}/>
-        </Switch>
-      </BrowserRouter>
-    </div>
+
+      <TemplateProvider>
+      <ContextProvider>
+        <BrowserRouter>
+          <Header />
+          <Box style={{marginTop: 54}}>
+            <Switch>
+              <Route exact path= '/' component={Home} />
+              <Route exact path= '/cart' component={Cart} />
+            </Switch>
+          </Box>
+        </BrowserRouter>
+      </ContextProvider>
+    </TemplateProvider>
+
   );
 }
 

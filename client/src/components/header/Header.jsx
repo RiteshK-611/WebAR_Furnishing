@@ -1,21 +1,9 @@
-import { AppBar, Toolbar, makeStyles } from '@material-ui/core'
+import { AppBar, Toolbar } from '@material-ui/core'
 import SearchBar from './SearchBar'
 import HeaderButtons from './HeaderButtons'
 import { Link } from 'react-router-dom'
-
-const useStyle = makeStyles({
-    header: {
-        background: '#2874f0',
-        justifyContent: 'center'
-    },
-    logo: {
-        width: 100,
-        marginTop: 5
-    },
-    component: {
-        marginLeft: '12%'
-    }
-})
+import useStyle from './styles/HeaderStyle'
+import WoodStockLogo from '../../images/woodstock_logo.jpeg'
 
 const Header = () => {
     const classes = useStyle();
@@ -24,7 +12,7 @@ const Header = () => {
         <AppBar className={classes.header}>
             <Toolbar>
                 <Link to='/' className={classes.component}>
-                    <img src={logoURL} alt="logo" className={classes.logo} />
+                    <img src={WoodStockLogo} alt="logo" className={classes.logo} />
                 </Link>
                 <SearchBar />
                 <HeaderButtons />
