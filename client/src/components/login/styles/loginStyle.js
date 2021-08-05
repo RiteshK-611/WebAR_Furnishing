@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import WoodStockLogo from '../../../images/woodstock.jpg'
+import WoodStockLogo from '../../../images/ws1.png'
 
 export default makeStyles({
     component: {
@@ -11,8 +11,9 @@ export default makeStyles({
     image: {
         //backgroundImage: `url(${'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png'})`,
         backgroundImage: `url(${WoodStockLogo})`,
-        background: '#377302',
-        backgroundPosition: 'center 65%',
+        backgroundImageSize: 10,
+        background: '#000',
+        backgroundPosition: 'center 87%',
         backgroundRepeat: 'repeat-x',
         height: '70vh',
         width: '40%',

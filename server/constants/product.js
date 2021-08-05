@@ -2,7 +2,7 @@ export const products = [
     { 
         id: 'product1',
         url: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        detailUrl: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg',
         title: {
             shortTitle: 'Home & Kitchen',
             longTitle: 'Banana Palm cocktail ottoman by The Inside'
@@ -18,11 +18,11 @@ export const products = [
     },
     { 
         id: 'product2',
-        url: 'https://theinside.imgix.net/products/pu2DcEkUqZyqUZYB7RBPORvCvsmadgig4Nj8JbvH.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=1446', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70',
+        url: 'https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        detailUrl: 'https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
-            shortTitle: 'Sandwich Makers',
-            longTitle: 'Cocktail Chair'
+            shortTitle: 'Cocktail Chair',
+            longTitle: 'Jade Cherry Blossom Cocktail Chair'
         },
         price: {
             mrp: 1499,
@@ -35,103 +35,120 @@ export const products = [
     },
     { 
         id: 'product3',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        url: 'https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        detailUrl: 'https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
-            shortTitle: 'Fitness Gear',
-            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)'
+            shortTitle: 'X Bench',
+            longTitle: 'Coral Zebra X Bench'
         }, 
         price: {
             mrp: 499,
             cost: 166,
             discount: '66%'
         },
-        description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
+        description: 'The classic X Bench--perfect in every way and even better as a pair. Fully upholstered and extra comfortable as an additional seat.',
         discount: 'Upto 70% Off', 
         tagline: 'Deal of the Day' 
     },
     { 
         id: 'product4',
-        url: 'https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70',
+        url: 'https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        detailUrl: 'https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
-            shortTitle: 'Smart Watches',
-            longTitle: 'Molife Sense 500 Smartwatch  (Black Strap, Freesize)',
+            shortTitle: 'Classic Sofa',
+            longTitle: 'Classic Sofa with organic elegance of natural malachite stone.',
         }, 
         price: {
             mrp: 6999,
             cost: 4049,
             discount: '42%'
         },
-        description: 'The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.',
+        description: 'Featuring a t-shaped back cushion and caster leg, our Classic Sofa is timeless in style and luxe in comfort. The perfect centerpiece for a modern or traditional living room.',
         discount: 'Grab Now', 
         tagline: 'Best Seller' 
     },
     { 
         id: 'product5',
-        url: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70', 
+        url: 'https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
+        detailUrl: 'https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
-            shortTitle: 'Trimmers, Dryers & more',
-            longTitle: 'Nova Professional NHP 8220 Hair Dryer  (1800 W, Multicolor)'
+            shortTitle: 'CLASSIC WINGBACK BED',
+            longTitle: 'Lattice Shibori Classic Wingback Bed'
         }, 
         price: {
             mrp: 1899,
             cost: 1124,
             discount: '40%'
         },
-        description: '',
+        description: 'Our Classic Wingback Bed is all about elegant simplicity. Box spring required.',
         discount: 'From ₹499', 
         tagline: 'Kubra, Nova & more' 
     },
     { 
         id: 'product6',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70', 
+        url: 'https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format',
+        detailUrl: 'https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format',
         title: {
-            shortTitle: 'Table Fans',
-            longTitle: 'Portable 300 mm Ultra High Speed 3 Blade Table Fan  (Black, Pack of 1)'
+            shortTitle: 'Mid-Century Accent Chair',
+            longTitle: 'Mid-Century Accent Chair with Porcelain Austin Stripe'
         }, 
         price: {
             mrp: 2250,
             cost: 1199,
             discount: '46%'
         },
-        description: 'Table Fan. Perfect size fan for use on a table, desk or in an RV. Whisper quiet, powerful airflow and reliable operation in a compact 6" size. Two adjustable speeds to customize airflow: high or low settings. Tough break-resistant ABS plastic blades. ',
+        description: 'The Mid-Century Accent Chair is the perfect occasional seat for your modern lifestyle. This chair fits effortlessly into any space, and looks great as a pair too.',
         discount: 'Minimum 40% Off', 
         tagline: 'Top Selling' 
     },
     { 
         id: 'product7',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70', 
+        url: 'https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format',
+        detailUrl: 'https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format',
         title: {
-            shortTitle: 'Headphones',
-            longTitle: 'boAt Rockerz 235v2 with ASAP charging Version 5.0 Bluetooth Headset '
+            shortTitle: 'Mid-Century Bench',
+            longTitle: 'Coral LinenMid-Century Bench'
         }, 
         price: {
             mrp: 2990,
             cost: 1199,
             discount: '59%'
         },
-        description: 'Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.',
+        description: 'Clean and minimal, the Mid-Century Bench is a piece that plays well with others.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!' 
     },
     { 
         id: 'product8',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70', 
+        url: 'https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format',
+        detailUrl: 'https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format',
         title: {
-            shortTitle: 'Headphones',
-            longTitle: 'boAt Rockerz 235v2 with ASAP charging Version 5.0 Bluetooth Headset '
+            shortTitle: 'Cubist Nightstand',
+            longTitle: 'Grey Cubist Nightstand'
         }, 
         price: {
             mrp: 2990,
             cost: 1199,
             discount: '59%'
         },
-        description: 'Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.',
+        description: 'The perfect marriage of modern and industrial design. The Cubist Nightstand is made from solid acacia wood and set on a powder coated iron frame making it durable and long-lasting. Its two spacious drawers provide ample storage and its sleek cubism-inspired fronts will keep your space modern.',
+        discount: 'Minimum 50% Off', 
+        tagline: 'Grab Now!' 
+    },
+    { 
+        id: 'product9',
+        url: 'https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format',
+        detailUrl: 'https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format',
+        title: {
+            shortTitle: 'Campaign Chest',
+            longTitle: 'Dark Walnut Campaign Chest'
+        }, 
+        price: {
+            mrp: 2990,
+            cost: 1199,
+            discount: '59%'
+        },
+        description: 'This three-drawer campaign chest is a versatile addition with virtually any décor. It is crafted from mango wood solids and wood products.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!' 
     }

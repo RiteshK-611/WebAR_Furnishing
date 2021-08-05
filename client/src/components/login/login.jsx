@@ -92,7 +92,7 @@ const Login = ({ open, setOpen, setAccount }) => {
                                 <TextField onChange={(e) => onValueChange(e)} name='username' label='Enter username' />
                                 { error && <Typography className={classes.error}>Please enter valid Email ID/Mobile number</Typography> }
                                 <TextField onChange={(e) => onValueChange(e)} name='password' label='Enter your pasword' />
-                                <Typography className={classes.text}>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Typography>
+                                <Typography className={classes.text}>By continuing, you agree to Woodstock's Terms of Use and Privacy Policy.</Typography>
                                 <Button variant="contained" className={classes.loginbtn} onClick={() => loginUser()} >Login</Button>
                                 <Typography style={{textAlign: 'center'}} className={classes.text} style={{textAlign:'center'}}>OR</Typography>
                                 <Button variant='contained' className={classes.requestbtn}>Request OTP</Button>
