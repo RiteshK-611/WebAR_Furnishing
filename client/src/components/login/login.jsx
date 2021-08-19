@@ -1,9 +1,24 @@
 //PART 4 @ 1:25:20
 
-import { Box, Dialog, DialogContent, Typography, Button, TextField } from '@material-ui/core'
+import { Box, 
+    Dialog, 
+    DialogContent, 
+    Typography, 
+    Button, 
+    TextField, 
+    FormControl, 
+    IconButton, 
+    Input, 
+    InputAdornment, 
+    InputLabel,   
+} from '@material-ui/core'
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import clsx from 'clsx'
 import React , {useState, useEffect} from 'react'
 import useStyle from './styles/loginStyle'
 import {  authenticateLogin, authenticateSignup } from '../../service/api';
+
 
 const loginInitialValues = {
     username: '',
@@ -16,7 +31,8 @@ const signupInitialValues = {
     username: '',
     email: '',
     password: '',
-    phone: ''
+    phone: '',
+    showPassword: false
 };
 
 const accountInitialValues = {
@@ -37,7 +53,7 @@ const Login = ({ open, setOpen, setAccount }) => {
     const [ login, setLogin ] = useState(loginInitialValues);
     const [ signup, setSignup ] = useState(signupInitialValues);
     const [ error, showError] = useState(false);
-    const [account, toggleAccount ] = useState(accountInitialValues.login);
+    const [ account, toggleAccount ] = useState(accountInitialValues.login);
     
 
 
@@ -79,6 +95,14 @@ const Login = ({ open, setOpen, setAccount }) => {
         console.log(signup);
     }
 
+    const handleClickShowPassword = () => {
+        setSignup({ ...signup, showPassword: !signup.showPassword });
+    };
+
+    const handleMouseDownPassword = (event) => {
+        event.preventDefault();
+    };
+
     return (
         <Dialog  open={open} onClose={handleCloseLoginDialog} >
             <DialogContent className={classes.component}>
@@ -105,6 +129,26 @@ const Login = ({ open, setOpen, setAccount }) => {
                                 <TextField onChange={(e) => onInputChange(e)} name='username' label='Enter username' />
                                 <TextField onChange={(e) => onInputChange(e)} name='email' label='Enter your email ' />
                                 <TextField onChange={(e) => onInputChange(e)} name='password' label='Enter your pasword' />
+                                <FormControl className={clsx(classes.margin, classes.textField)}>
+                                <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                                <Input
+                                    id="standard-adornment-password"
+                                    type={signup.showPassword ? 'text' : 'password'}
+                                    value={signup.password}
+                                    onChange={(e) => onInputChange(e)}
+                                    endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                        >
+                                        {signup.showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                    }
+                                />
+                                </FormControl>
                                 <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter your phone number' />
                                 <Button variant='contained' onClick={()=> signupUser() } className={classes.loginbtn}>Sign up</Button>
                             </Box>

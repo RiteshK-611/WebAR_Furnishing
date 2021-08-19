@@ -1,51 +1,14 @@
 
-import { Box, makeStyles, Table, TableBody, TableRow, Typography, TableCell } from '@material-ui/core';
+import { Box, Table, TableBody, TableRow, Typography, TableCell } from '@material-ui/core';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProductDetails } from '../../redux/actions/productActions';
 import { LocalOffer as Badge } from '@material-ui/icons';
 import clsx from 'clsx'
+import useStyle from './styles/detailViewStyle'
 
 //component
 import ActionItems from './ActionItems';
-
-const useStyle = makeStyles({
-    component: {
-        marginTop: 75,
-        backgound: '#F2F2F2'
-    },
-    container: {
-        margin: '0 80px',
-        background: '#fff',
-        display: 'flex'
-    },
-    rightcontainer:{
-        marginTop: 50,
-        '& > *':{
-            marginTop: 10
-        }
-    },
-    smallText: {
-        fontSize: 14,
-        verticalAlign: 'baseline',
-        '& > *':{
-            fontSize: 14,
-            marginTop: 10
-        }
-
-    }, 
-    greyTextcolor: {
-        color: '#878787'
-    },
-    price: {
-        fontSize: 28
-    },
-    badge: {
-        fontSize: 16,
-        marginRight: 10,
-        color: '#663300'
-    }
-})
 
 const DetailView = ({ match}) => {
     const classes = useStyle();

@@ -7,10 +7,10 @@ const MidSection = ({products}) => {
     const classes = useStyle();
     return (
         <Container className={classes.cardGrid}>
-            <Grid container spacing={14}>
+            <Grid container spacing={4}>
                 {products.map((product) => (
-                    <Link to={`/product/${product.id}`}>
-                        <Grid item key={product} xs={40} sm={16} md={14}>
+                    <Grid item key={product} xs={12} sm={6} md={4}>
+                        <Link to={`/product/${product.id}`} style={{textDecoration: 'none'}}>
                             <Card className={classes.card}>
                                 <CardActionArea>
                                    <CardMedia
@@ -30,8 +30,8 @@ const MidSection = ({products}) => {
                                    </Button>
                                 </CardActions>
                             </Card>
-                        </Grid>
-                    </Link>
+                        </Link>
+                    </Grid>
                 ))}
             </Grid>
         </Container>

@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Menu, MenuItem, makeStyles } from '@material-ui/core';
+import { Typography, Menu, MenuItem } from '@material-ui/core';
 import { PowerSettingsNew } from '@material-ui/icons';
 import useStyle from './styles/profileStyle';
-
 
 
 const Profile = ({ account, setAccount }) => {

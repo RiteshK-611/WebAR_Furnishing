@@ -8,6 +8,8 @@ export default makeStyles((theme) => ({
         marginBottom: 10,
         alignItems: 'center',
         justifyContent: 'center',
+        // textTransform: 'none',
+        textDecoration: 'none'
     },
     cardGrid: {
         padding: '20px 0',
@@ -25,6 +27,7 @@ export default makeStyles((theme) => ({
         padding: 15
     },
     cardContent: {
-        flexGrow: 1
+        flexGrow: 1,
+        textDecoration: 'none'
     }
 }))

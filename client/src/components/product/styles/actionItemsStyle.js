@@ -1,0 +1,27 @@
+import { makeStyles } from '@material-ui/core/styles';
+
+export default makeStyles({
+    leftContainer: {
+        padding: '40px 0 0 80px'
+    },
+    image:{
+        padding: '15px 20px',
+        border: '1px solid #fofofo',
+        width: '90%'
+    },
+    button: {
+        height: 50,
+        width: '46%',
+        borderRadius: 2
+    },
+    addTocart: {
+        background: '#ff9f00',
+        color: '#fff',
+        marginRight: 10
+    },
+    addTobuy: {
+        background: '#000000',
+        //background: '#fb641b',
+        color: '#fff'
+    }
+})

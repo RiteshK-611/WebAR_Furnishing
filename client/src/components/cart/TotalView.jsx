@@ -44,7 +44,6 @@ const TotalView = ({ cartItems }) => {
 
     useEffect(() => {
         totalAmount();
-
     }, [cartItems]);
 
     const totalAmount = () => {
@@ -65,7 +64,7 @@ const TotalView = ({ cartItems }) => {
             <Box className={classes.container}>
                 <Typography>Price ({cartItems.length} items)<span className={classes.price}>₹{price}</span></Typography>
                 <Typography>Discount <span className={classes.price}>-₹{discount}</span></Typography>
-                <Typography>Delivery Charge <span className={classes.price}>₹40</span></Typography>
+                <Typography>Delivery Charge <span className={classes.price}>₹100</span></Typography>
                 <Typography className={classes.totalAmount}>Total Amount<span className={classes.price}>₹{price - discount  +40}</span></Typography>
                 <Typography style={{color: 'green'}}>You will Save ₹{discount - 40} on this order</Typography>
             </Box>
