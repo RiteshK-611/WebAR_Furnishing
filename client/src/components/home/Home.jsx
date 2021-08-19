@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getProducts as listProducts} from '../../redux/actions/productActions';
 import { products } from '../../constants/data';
 
+
 const Home = () => {
     const classes = useStyle();
     const { products } = useSelector(state => state.getProducts);
@@ -19,10 +20,12 @@ const Home = () => {
 
 
     return (
+       
         <Box className={classes.component}>
             <Banner />
             <MidSection products={products} />
         </Box>
+       
     )
 }
 
