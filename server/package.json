@@ -17,8 +17,11 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "https": "^1.0.0",
     "mongoose": "^5.12.15",
     "nodemon": "^2.0.7",
-    "react-file-base64": "^1.0.3"
+    "react-file-base64": "^1.0.3",
+    "uuid": "^8.3.2"
   }
 }
