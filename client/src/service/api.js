@@ -23,7 +23,7 @@ export const payUsingPaytm = async (data) => {
         let response = await axios.post(`${url}/payment`, data);
         return response.data;
     } catch(error) {
-        console.log('Errorwhile calling Paytm API', error);
+        console.log('error while calling Paytm API', error);
     }
 
 }
