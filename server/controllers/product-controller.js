@@ -18,3 +18,17 @@ export const getProductById = async (request, response) => {
         console.log('Error:', error.message);
     }
 }
+
+/* export const addNewProductToDb = async (request, response) => {
+    const product = req.body;
+
+    const newProduct = new Product({...product });
+
+    try {
+        await newPost.save();
+
+        res.status(201).json(newPost);
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+} */

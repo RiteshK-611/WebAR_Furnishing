@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { Box, makeStyles, Typography, Button } from '@material-ui/core';
+import { Box, Typography, Button, Grid  } from '@material-ui/core';
 import { removeFromCart } from '../../redux/actions/cartActions';
 
 import { payUsingPaytm } from '../../service/api';
@@ -10,38 +10,8 @@ import { post } from '../../utils/paytm';
 import CartItem from './CartItem';
 import EmptyCart from './EmptyCart';
 import TotalView from './TotalView';
+import useStyle from './styles/cartstyle';
 
-const useStyle = makeStyles({
-    component: {
-        marginTop: 55,
-        padding: '30px 135px',
-        display: 'flex'
-        
-    },
-    leftcomponent: {
-        width: '67%'
-
-    },
-    header: {
-        paddign: '15px, 24px',
-        background: '#fff'
-    },
-    placeorder: {
-        background: '#fb641b',
-        color: '#fff',
-        borderRadius: 2,
-        width: 250,
-        height: 50, 
-        display: 'flex',
-        marginLeft: 'auto'    
-    },
-    bottom: {
-        padding: '16px, 22px',
-        background: '#fff', 
-        borderTop: '1px solid #f0f0f0',
-        boxShadow: '0 -2px 10px 0 rgb(0 0 0 /10%)'
-    }
-})
 
 
     const Cart = () => {
@@ -74,8 +44,8 @@ const useStyle = makeStyles({
        <>
              {
                  cartItems.length ?
-                    <Box className={classes.component}>
-                        <Box className={classes.leftcomponent}>
+                    <Grid container className={classes.component}>
+                        <Grid item lg={9} md={9} sm={12} xs={12} className={classes.leftcomponent}>
                             <Box className={classes.header}>
                                 <Typography style={{fontWeight: 600, fontSize: 18}}>My Cart ({cartItems.length})</Typography>
 
@@ -88,13 +58,17 @@ const useStyle = makeStyles({
                             <Box className={classes.bottom}>
                                 <Button onClick={() => buyNow()} className={classes.placeorder} variant="contained">Place Order</Button>
                             </Box>
-                        </Box>
+                        </Grid>
                         
-                        <TotalView cartItems={cartItems}  />
+
+                        <Grid item lg={3} md={3} sm={12} xs={12}>
+                            <TotalView cartItems={cartItems}  />
+                        </Grid>
+                        
 
                         
                         
-                    </Box>
+                    </Grid>
 
 
                     :<EmptyCart/>

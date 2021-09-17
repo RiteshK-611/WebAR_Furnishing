@@ -15,6 +15,9 @@ router.post('/payment', addPaymentGateway);
 router.post('/callback', paymentResponse);
 
 
+//router.post('/addProduct', addNewProductToDb )
+
+
 
 export default router;
 

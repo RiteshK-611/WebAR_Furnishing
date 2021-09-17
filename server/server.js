@@ -5,7 +5,9 @@ import DefaultData from './default.js';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import Routers from './routes/routes.js';
+
 import { v4 as uuid } from 'uuid';
+
 
 dotenv.config()
 
@@ -15,7 +17,10 @@ app.use(bodyParser.json({ extended:true }));
 app.use(bodyParser.urlencoded({ extended:true }));
 app.use(cors());
 
+
+
 app.use('/', Routers);
+
 
 // const PORT = process.env.PORT || 8000;
 const PORT = 8000;
