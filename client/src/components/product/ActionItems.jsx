@@ -33,7 +33,6 @@ const ActionItems = ({ product }) => {
         let information = {
             action: 'https://securegw-stage.paytm.in/order/process',
             params: response 
-           
         }
 
         post(information);

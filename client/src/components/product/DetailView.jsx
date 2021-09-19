@@ -13,7 +13,7 @@ import ActionItem from './ActionItems';
 //import ProductDetail from './ProductDetail';
 
 
-const DetailView = ({ match}) => {
+const DetailView = ({ match }) => {
     const classes = useStyle();
 
     const { product } = useSelector(state => state.getProductDetails);

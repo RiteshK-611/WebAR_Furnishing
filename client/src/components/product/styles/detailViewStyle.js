@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(theme => ({
         component: {
             marginTop: 55,
-            backgound: '#F2F2F2'
+            backgound: '#F2F2F2',
         },
         container: {
             //margin: '0 80px',

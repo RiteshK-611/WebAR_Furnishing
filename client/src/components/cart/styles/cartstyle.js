@@ -15,7 +15,6 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             marginBottom: 15
         }
-
     },
     header: {
         paddign: '15px, 24px',

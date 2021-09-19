@@ -1,12 +1,16 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles({
+export default makeStyles((theme) => ({
     search: {
         borderRadius: 5,
         backgroundColor: '#fff',
         marginLeft: 50,
         width: '38%',
         display: 'flex',
+        [theme.breakpoints.down('xs')]: {
+            margin: '10px 0',
+            width: '100%',
+        }
     },
     searchIcon: {
         padding: 5,
@@ -24,4 +28,11 @@ export default makeStyles({
     inputInput: {
         paddingLeft: 10
     },
-})
+    list: {
+        position: 'absolute',
+        color: '#000000',
+        backgroundColor: '#fff',
+        marginTop: 30
+    }
+    })
+)

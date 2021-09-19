@@ -5,8 +5,6 @@ export default makeStyles((theme) => ({
         //width: '30%',
         background: '#fff', 
         marginLeft: 0,
-        
-
     },
     header: {
         padding: '16px 24px',

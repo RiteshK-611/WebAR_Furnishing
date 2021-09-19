@@ -12,8 +12,8 @@ export default makeStyles(theme => ({
         image:{
             padding: '15px 20px',
             border: '1px solid #fofofo',
-            width: '90%',
-            
+            width: '100%',
+            height: '100%',
         },
         button: {
             height: 50,

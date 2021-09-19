@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles({
+export default makeStyles((theme) => ({
     login: {
         background: '#fff',
         color: '#2874f0',
@@ -18,12 +18,23 @@ export default makeStyles({
             alignItems: 'center',
             textDecoration: 'none',
             color: '#fff'
+        },
+        [theme.breakpoints.down('xs')]: {
+            justifyContent: 'flex-start'  
         }
     },
     cart: {
         marginLeft: 10,
+        [theme.breakpoints.down('xs')]: {
+            display: 'none',
+        }
     },
     container: {
-        display: 'flex'
+        display: 'flex',
+        alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            marginRight: 90
+        }
     }
-})
+    })
+)
