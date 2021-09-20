@@ -12,7 +12,6 @@ import useStyle from './styles/detailViewStyle'
 import ActionItem from './ActionItems';
 //import ProductDetail from './ProductDetail';
 
-
 const DetailView = ({ match }) => {
     const classes = useStyle();
 

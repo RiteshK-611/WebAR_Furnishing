@@ -1,5 +1,18 @@
 export const products = [
-    { 
+    {   //change detailUrl : 'http://......' to 
+        // detailUrl: {
+        //      imgOne: 'http://......'
+        //      imgTwo: 'http://......'
+        //      imgThree: 'http://......'
+        //      imgFour: 'http://......'
+        // }
+        // or to an array of images
+        // change arUrl: 'http://......' to
+        // arModel: {
+        //      androidModel: 'http://......'
+        //      iosModel: 'http://......'
+        // }
+        // images & models are to be stored in google drive as per product id
         id: 'product1',
         url: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg', 
         detailUrl: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg',
@@ -14,7 +27,8 @@ export const products = [
         },
         description: 'The Cocktail Ottoman is foot stool and coffee table combined. It exudes coziness while remaining every bit sophisticated.',
         discount: 'Extra 10% Off', 
-        tagline: 'Deal of the day' 
+        tagline: 'Deal of the day',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/blueSofa.html'
     },
     { 
         id: 'product2',
@@ -31,7 +45,8 @@ export const products = [
         },
         description: 'This elegant arm chair is reminiscent of mid-century cocktail furnishings when entertaining was everyday.',
         discount: 'From 99+5% Off', 
-        tagline: 'Pestige, Nova & more' 
+        tagline: 'Pestige, Nova & more',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/asianBed.html'
     },
     { 
         id: 'product3',
@@ -48,7 +63,8 @@ export const products = [
         },
         description: 'The classic X Bench--perfect in every way and even better as a pair. Fully upholstered and extra comfortable as an additional seat.',
         discount: 'Upto 70% Off', 
-        tagline: 'Deal of the Day' 
+        tagline: 'Deal of the Day',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html'
     },
     { 
         id: 'product4',
@@ -65,7 +81,8 @@ export const products = [
         },
         description: 'Featuring a t-shaped back cushion and caster leg, our Classic Sofa is timeless in style and luxe in comfort. The perfect centerpiece for a modern or traditional living room.',
         discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        tagline: 'Best Seller',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/biggreenchair.html'
     },
     { 
         id: 'product5',
@@ -82,7 +99,8 @@ export const products = [
         },
         description: 'Our Classic Wingback Bed is all about elegant simplicity. Box spring required.',
         discount: 'From ₹499', 
-        tagline: 'Kubra, Nova & more' 
+        tagline: 'Kubra, Nova & more',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/grayLsofa.html'
     },
     { 
         id: 'product6',
@@ -99,7 +117,8 @@ export const products = [
         },
         description: 'The Mid-Century Accent Chair is the perfect occasional seat for your modern lifestyle. This chair fits effortlessly into any space, and looks great as a pair too.',
         discount: 'Minimum 40% Off', 
-        tagline: 'Top Selling' 
+        tagline: 'Top Selling',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/coconchair.html'
     },
     { 
         id: 'product7',
@@ -116,7 +135,8 @@ export const products = [
         },
         description: 'Clean and minimal, the Mid-Century Bench is a piece that plays well with others.',
         discount: 'Minimum 50% Off', 
-        tagline: 'Grab Now!' 
+        tagline: 'Grab Now!',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/bed.html'
     },
     { 
         id: 'product8',
@@ -133,7 +153,8 @@ export const products = [
         },
         description: 'The perfect marriage of modern and industrial design. The Cubist Nightstand is made from solid acacia wood and set on a powder coated iron frame making it durable and long-lasting. Its two spacious drawers provide ample storage and its sleek cubism-inspired fronts will keep your space modern.',
         discount: 'Minimum 50% Off', 
-        tagline: 'Grab Now!' 
+        tagline: 'Grab Now!',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html'
     },
     { 
         id: 'product9',
@@ -150,6 +171,7 @@ export const products = [
         },
         description: 'This three-drawer campaign chest is a versatile addition with virtually any décor. It is crafted from mango wood solids and wood products.',
         discount: 'Minimum 50% Off', 
-        tagline: 'Grab Now!' 
+        tagline: 'Grab Now!',
+        arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html'
     }
 ];
