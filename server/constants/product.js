@@ -136,7 +136,7 @@ export const products = [
         description: 'Clean and minimal, the Mid-Century Bench is a piece that plays well with others.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
-        arUrl: 'https://soham-madhav.github.io/webAR-products/bed.html'
+        arUrl: 'https://soham-madhav.github.io/webAR-products/rusticChair.html'
     },
     { 
         id: 'product8',
@@ -154,7 +154,7 @@ export const products = [
         description: 'The perfect marriage of modern and industrial design. The Cubist Nightstand is made from solid acacia wood and set on a powder coated iron frame making it durable and long-lasting. Its two spacious drawers provide ample storage and its sleek cubism-inspired fronts will keep your space modern.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
-        arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html'
+        arUrl: 'https://soham-madhav.github.io/webAR-products/sidetable.html'
     },
     { 
         id: 'product9',
@@ -172,6 +172,6 @@ export const products = [
         description: 'This three-drawer campaign chest is a versatile addition with virtually any décor. It is crafted from mango wood solids and wood products.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
-        arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html'
+        arUrl: 'https://soham-madhav.github.io/webAR-products/nightstand.html'
     }
 ];
