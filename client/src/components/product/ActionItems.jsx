@@ -44,7 +44,7 @@ const ActionItems = ({ product }) => {
     
     return (
         <Box className={classes.leftContainer}>
-            <img src='https://docs.google.com/uc?id=1mlXFKL7CsrbF45XRqp9u6aIXMOuYZsRQ'  className={classes.image} alt="" /><br/>
+            <img src={product.url}  className={classes.image} alt="" /><br/>
             <a target="_blank" href={ product.arUrl } style={{textDecoration: 'none'}}  >
                 <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
             </a>

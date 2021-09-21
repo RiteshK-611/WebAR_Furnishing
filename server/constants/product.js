@@ -14,7 +14,7 @@ export const products = [
         // }
         // images & models are to be stored in google drive as per product id
         id: 'product1',
-        url: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg', 
+        url: 'https://docs.google.com/uc?id=1gDgOws28Tf2gY4Dfoal9rPP46wsLLI3z', 
         detailUrl: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg',
         title: {
             shortTitle: 'Home & Kitchen',
@@ -32,7 +32,7 @@ export const products = [
     },
     { 
         id: 'product2',
-        url: 'https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        url: 'https://docs.google.com/uc?id=15LOvfGM5-FSqdiHEUMCYnl6CPUDJET4S', 
         detailUrl: 'https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
             shortTitle: 'Cocktail Chair',
@@ -50,7 +50,7 @@ export const products = [
     },
     { 
         id: 'product3',
-        url: 'https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        url: 'https://docs.google.com/uc?id=1eg5aIGx5pAGd7LuzM3_CbUJUmabXSl-c', 
         detailUrl: 'https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
             shortTitle: 'X Bench',
@@ -68,7 +68,7 @@ export const products = [
     },
     { 
         id: 'product4',
-        url: 'https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
+        url: 'https://docs.google.com/uc?id=1a-DTreOTuT7jGGiyjpq4Tn94sXTA-gJ-', 
         detailUrl: 'https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
             shortTitle: 'Classic Sofa',
@@ -86,7 +86,7 @@ export const products = [
     },
     { 
         id: 'product5',
-        url: 'https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
+        url: 'https://docs.google.com/uc?id=1omIh-oIdoRmDQxP9_AZyYooxRzdCBEES', 
         detailUrl: 'https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
             shortTitle: 'CLASSIC WINGBACK BED',
@@ -104,7 +104,7 @@ export const products = [
     },
     { 
         id: 'product6',
-        url: 'https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format',
+        url: 'https://docs.google.com/uc?id=1At4AqOB4Y2lOmO0WpE5PUh3dd6M6HamD', 
         detailUrl: 'https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format',
         title: {
             shortTitle: 'Mid-Century Accent Chair',
@@ -122,7 +122,7 @@ export const products = [
     },
     { 
         id: 'product7',
-        url: 'https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format',
+        url: 'https://docs.google.com/uc?id=1PhHXtXQh4JLyitmvBjX8vOFnFBzaRZeL', 
         detailUrl: 'https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format',
         title: {
             shortTitle: 'Mid-Century Bench',
@@ -140,7 +140,7 @@ export const products = [
     },
     { 
         id: 'product8',
-        url: 'https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format',
+        url: 'https://docs.google.com/uc?id=1CWLM6nYILsKqb9ykzp9_LsrxjQCyh-DX', 
         detailUrl: 'https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format',
         title: {
             shortTitle: 'Cubist Nightstand',
@@ -158,7 +158,7 @@ export const products = [
     },
     { 
         id: 'product9',
-        url: 'https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format',
+        url: 'https://docs.google.com/uc?id=1srG1Ddv3zqA77ZRUNaF07xuAzcJQ3Xx7', 
         detailUrl: 'https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format',
         title: {
             shortTitle: 'Campaign Chest',
