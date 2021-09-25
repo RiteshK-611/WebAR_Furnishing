@@ -7,7 +7,7 @@ export const getProducts = async (request, response) => {
 
         response.json(products);
     }catch (error) {
-
+        console.log('Error:', error.message);
     }
 }
 export const getProductById = async (request, response) => {

@@ -9,7 +9,8 @@ const productSchema = new mongoose.Schema({
     description: String,
     discount: String,
     tagline: String,
-    arUrl: String
+    arUrl: String,
+    arModel: Object
 })
 
 const products = mongoose.model('product', productSchema);

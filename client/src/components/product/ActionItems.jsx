@@ -6,7 +6,7 @@ import { ShoppingBasket as Buy } from '@material-ui/icons';
 import { addToCart } from '../../redux/actions/cartActions';
 import { Visibility as View } from '@material-ui/icons';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useStyle from './styles/actionItemsStyle'
 import chair from '../../images/rusticChair.jpg'
 import { payUsingPaytm } from '../../service/api';
@@ -48,6 +48,9 @@ const ActionItems = ({ product }) => {
             <a target="_blank" href={ product.arUrl } style={{textDecoration: 'none'}}  >
                 <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
             </a>
+            {/* <Link to={`/product/ar/${product.id}`}>
+                <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
+            </Link> */}
             <br/>
             <Button onClick={() => addItemToCart()} variant="contained" className={clsx(classes.button, classes.addTocart)}><Cart />Add to Cart</Button>
             <br/>

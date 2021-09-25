@@ -21,22 +21,22 @@ const Cart = () => {
 
     const dispatch = useDispatch();
 
-        useEffect(() => {
-            console.log(cartItems);
-        })
+    useEffect(() => {
+        console.log(cartItems);
+    })
 
-        const removeItemFromCart = (id) => {
-            dispatch(removeFromCart(id));
+    const removeItemFromCart = (id) => {
+        dispatch(removeFromCart(id));
+    }
+    const buyNow = async () => {
+        let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com'});
+    
+        let information = {
+            action: 'https://securegw-stage.paytm.in/order/process',
+            params: response   
         }
-        const buyNow = async () => {
-            let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com'});
-     
-            let information = {
-                action: 'https://securegw-stage.paytm.in/order/process',
-                params: response   
-            }
-            post(information);
-        }    
+        post(information);
+    }    
 
     return (
         <>
