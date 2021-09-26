@@ -17,15 +17,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1gDgOws28Tf2gY4Dfoal9rPP46wsLLI3z', 
         detailUrl: 'https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg',
         title: {
-            shortTitle: 'Home & Kitchen',
-            longTitle: 'Banana Palm cocktail ottoman by The Inside'
+            shortTitle: 'Blue Sofa',
+            longTitle: 'Cologne 2 Seater Sofa in Blue Colour'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 35999,
+            cost: 23040,
+            discount: '36%'
         },
-        description: 'The Cocktail Ottoman is foot stool and coffee table combined. It exudes coziness while remaining every bit sophisticated.',
+        description: 'This type is attributed to Thomas W. Lawson, an American businessman and author who commissioned the model for extra comfort. You can find textile and leather finishes and various embedded materials, including metal and wood.',
         discount: 'Extra 10% Off', 
         tagline: 'Deal of the day',
         arUrl: 'https://soham-madhav.github.io/webAR-products/blueSofa.html',
@@ -39,15 +39,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=15LOvfGM5-FSqdiHEUMCYnl6CPUDJET4S', 
         detailUrl: 'https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
-            shortTitle: 'Cocktail Chair',
-            longTitle: 'Jade Cherry Blossom Cocktail Chair'
+            shortTitle: 'Bed',
+            longTitle: 'Solid Wood King Size Asian Bed'
         },
         price: {
-            mrp: 1499,
-            cost: 899,
-            discount: '40%'
+            mrp: 80000,
+            cost: 64000,
+            discount: '20%'
         },
-        description: 'This elegant arm chair is reminiscent of mid-century cocktail furnishings when entertaining was everyday.',
+        description: 'Beautiful bed on a dark grain wood board. High quality model perfect for a bedroom scene. Comes with the textures baked in 4k/2k/1k for better optimization.',
         discount: 'From 99+5% Off', 
         tagline: 'Pestige, Nova & more',
         arUrl: 'https://soham-madhav.github.io/webAR-products/asianBed.html',
@@ -60,15 +60,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1eg5aIGx5pAGd7LuzM3_CbUJUmabXSl-c', 
         detailUrl: 'https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
-            shortTitle: 'X Bench',
-            longTitle: 'Coral Zebra X Bench'
+            shortTitle: 'Red Shelf',
+            longTitle: 'Classic Red Shelf'
         }, 
         price: {
-            mrp: 499,
-            cost: 166,
-            discount: '66%'
+            mrp: 24530,
+            cost: 18398,
+            discount: '25%'
         },
-        description: 'The classic X Bench--perfect in every way and even better as a pair. Fully upholstered and extra comfortable as an additional seat.',
+        description: 'This shelf is ideal for both home or office. Designed with large storage shelves to save your space',
         discount: 'Upto 70% Off', 
         tagline: 'Deal of the Day',
         arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html',
@@ -82,15 +82,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1a-DTreOTuT7jGGiyjpq4Tn94sXTA-gJ-', 
         detailUrl: 'https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798', 
         title: {
-            shortTitle: 'Classic Sofa',
-            longTitle: 'Classic Sofa with organic elegance of natural malachite stone.',
+            shortTitle: 'Classic single Sofa',
+            longTitle: 'Cologne 1 Seater Sofa Green Colour',
         }, 
         price: {
-            mrp: 6999,
-            cost: 4049,
-            discount: '42%'
+            mrp: 17999,
+            cost: 10800,
+            discount: '40%'
         },
-        description: 'Featuring a t-shaped back cushion and caster leg, our Classic Sofa is timeless in style and luxe in comfort. The perfect centerpiece for a modern or traditional living room.',
+        description: 'This type is attributed to Thomas W. Lawson, an American businessman and author who commissioned the model for extra comfort. You can find textile and leather finishes and various embedded materials, including metal and wood.',
         discount: 'Grab Now', 
         tagline: 'Best Seller',
         arUrl: 'https://soham-madhav.github.io/webAR-products/biggreenchair.html',
@@ -104,15 +104,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1omIh-oIdoRmDQxP9_AZyYooxRzdCBEES', 
         detailUrl: 'https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798',
         title: {
-            shortTitle: 'CLASSIC WINGBACK BED',
-            longTitle: 'Lattice Shibori Classic Wingback Bed'
+            shortTitle: 'RHS Sofa',
+            longTitle: 'Forenster 4-Seater RHS Sofa Set in Dark Grey Colour'
         }, 
         price: {
-            mrp: 1899,
-            cost: 1124,
-            discount: '40%'
+            mrp: 45000,
+            cost: 34838,
+            discount: '23%'
         },
-        description: 'Our Classic Wingback Bed is all about elegant simplicity. Box spring required.',
+        description: 'A Sectional Corner Sofa is not defined by a lounger on the right or left side and can fit in any corner of the living room.  It is a RHS sectional sofa which is very fluid, simplistic style which takes its cues from the in-vogue polishes, textures and colours of the season and is bereft of any ornamentation or embellishments. In this style you can see nods to modern, traditional, art deco and even futuristic design.',
         discount: 'From ₹499', 
         tagline: 'Kubra, Nova & more',
         arUrl: 'https://soham-madhav.github.io/webAR-products/grayLsofa.html',
@@ -126,15 +126,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1At4AqOB4Y2lOmO0WpE5PUh3dd6M6HamD', 
         detailUrl: 'https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format',
         title: {
-            shortTitle: 'Mid-Century Accent Chair',
-            longTitle: 'Mid-Century Accent Chair with Porcelain Austin Stripe'
+            shortTitle: 'Cocoon Chair',
+            longTitle: 'Cocoon Chair with Water Drop Print'
         }, 
         price: {
-            mrp: 2250,
-            cost: 1199,
-            discount: '46%'
+            mrp: 10999,
+            cost: 7499,
+            discount: '32%'
         },
-        description: 'The Mid-Century Accent Chair is the perfect occasional seat for your modern lifestyle. This chair fits effortlessly into any space, and looks great as a pair too.',
+        description: 'Cocoon Chairs are popular, arch-typical trademark chairs, having a certain character, status and legacy. These are Eames Iconic Replicas, contoured to fit a person. These blue colour cocoon chair represent the playful functionality of Mid-Century American design.',
         discount: 'Minimum 40% Off', 
         tagline: 'Top Selling',
         arUrl: 'https://soham-madhav.github.io/webAR-products/coconchair.html',
@@ -148,15 +148,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1PhHXtXQh4JLyitmvBjX8vOFnFBzaRZeL', 
         detailUrl: 'https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format',
         title: {
-            shortTitle: 'Mid-Century Bench',
-            longTitle: 'Coral LinenMid-Century Bench'
+            shortTitle: 'Dining Chair',
+            longTitle: 'Classic Cafe Dining Chair'
         }, 
         price: {
-            mrp: 2990,
-            cost: 1199,
-            discount: '59%'
+            mrp: 7299,
+            cost: 5256,
+            discount: '28%'
         },
-        description: 'Clean and minimal, the Mid-Century Bench is a piece that plays well with others.',
+        description: 'On top of its tapered legs and mid-century-inspired frame, we gave our Classic Cafe Dining Chair a plain seat and backrest for extra comfort.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/rusticChair.html',
@@ -170,15 +170,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1CWLM6nYILsKqb9ykzp9_LsrxjQCyh-DX', 
         detailUrl: 'https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format',
         title: {
-            shortTitle: 'Cubist Nightstand',
-            longTitle: 'Grey Cubist Nightstand'
+            shortTitle: 'Side Table',
+            longTitle: 'Cabin Storage Side Table (Back Unit)'
         }, 
         price: {
-            mrp: 2990,
-            cost: 1199,
-            discount: '59%'
+            mrp: 28880,
+            cost: 17248,
+            discount: '40%'
         },
-        description: 'The perfect marriage of modern and industrial design. The Cubist Nightstand is made from solid acacia wood and set on a powder coated iron frame making it durable and long-lasting. Its two spacious drawers provide ample storage and its sleek cubism-inspired fronts will keep your space modern.',
+        description: 'Large capacity storage cabinet for office and home.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/sidetable.html',
@@ -192,15 +192,15 @@ export const products = [
         url: 'https://docs.google.com/uc?id=1srG1Ddv3zqA77ZRUNaF07xuAzcJQ3Xx7', 
         detailUrl: 'https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format',
         title: {
-            shortTitle: 'Campaign Chest',
-            longTitle: 'Dark Walnut Campaign Chest'
+            shortTitle: 'Nightstand',
+            longTitle: 'Classic Woody Nightstand'
         }, 
         price: {
-            mrp: 2990,
-            cost: 1199,
-            discount: '59%'
+            mrp: 11599,
+            cost: 8700,
+            discount: '25%'
         },
-        description: 'This three-drawer campaign chest is a versatile addition with virtually any décor. It is crafted from mango wood solids and wood products.',
+        description: 'This Nightstand features 2 spacious drawers for storage. Legs are crafted from wood and Drawer Pull is crafted from metal and finished in golden colour.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/nightstand.html',

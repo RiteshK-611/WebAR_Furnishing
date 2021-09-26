@@ -3,19 +3,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getProductDetails } from '../../redux/actions/productActions';
 import './style.css';
 import '@google/model-viewer/dist/model-viewer.min.js';
-import chair from './assets/CHAIR.glb';
 import QRCode from 'qrcode.react'
 
 const ARView = ({ match }) => {
   const { product } = useSelector(state => state.getProductDetails);
 
-  // const date = new Date(new Date().getTime() + (5 * 24 * 60 * 60 * 1000));
-
   const dispatch = useDispatch();
 
   useEffect(() => {
       dispatch(getProductDetails(match.params.id));
-
   }, [dispatch])
 
   const modelViewer = {
