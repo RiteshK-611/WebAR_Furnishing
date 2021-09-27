@@ -5,7 +5,7 @@ import useStyle from './styles/HomeStyle'
 import React,  { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProducts as listProducts} from '../../redux/actions/productActions';
-import { products } from '../../constants/data';
+// import { products } from '../../constants/data';
 
 
 const Home = () => {

@@ -1,11 +1,11 @@
 
 //import { Box, Table, TableBody, TableRow, Typography, TableCell } from '@material-ui/core';
-import { Box, Typography, makeStyles, CircularProgress, Button, Grid, Table, TableBody, TableRow, TableCell } from '@material-ui/core';
+import { Box, Typography, Grid, Table, TableBody, TableRow, TableCell } from '@material-ui/core';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProductDetails } from '../../redux/actions/productActions';
-import { LocalOffer as Badge } from '@material-ui/icons';
-import clsx from 'clsx'
+// import { LocalOffer as Badge } from '@material-ui/icons';
+// import clsx from 'clsx'
 import useStyle from './styles/detailViewStyle'
 
 //component
@@ -24,7 +24,7 @@ const DetailView = ({ match }) => {
     useEffect(() => {
         dispatch(getProductDetails(match.params.id));
 
-    }, [dispatch])
+    }, [dispatch, match.params.id])
      
     
     

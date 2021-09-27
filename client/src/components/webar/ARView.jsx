@@ -4,6 +4,7 @@ import { getProductDetails } from '../../redux/actions/productActions';
 import './style.css';
 import '@google/model-viewer/dist/model-viewer.min.js';
 import QRCode from 'qrcode.react'
+import hand from './assets/hand.png'
 
 const ARView = ({ match }) => {
   const { product } = useSelector(state => state.getProductDetails);
@@ -12,19 +13,10 @@ const ARView = ({ match }) => {
 
   useEffect(() => {
       dispatch(getProductDetails(match.params.id));
-  }, [dispatch])
+  }, [dispatch, match.params.id])
 
-  const modelViewer = {
-    backgroundColor: "#eee",
-    overflowX: "hidden",
-    posterColor: "#eee",
-    width: 400,
-    height: 300,
-    borderRadius: 10,
-
-    marginTop: 40,
-    marginLeft: 40,
-  }
+  // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser?noredirect=1&lq=1
+  // https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript
 
   if( navigator.userAgent.match(/iPhone/i)
     || navigator.userAgent.match(/webOS/i)
@@ -39,7 +31,7 @@ const ARView = ({ match }) => {
       <div className={ARView}>
         {
           product && Object.keys(product).length &&
-          <model-viewer className="modelviewer" style={modelViewer} src={product.arModel.android} /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
+          <model-viewer src={ require(`./assets/${product.id}.glb`).default } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
             ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
             alt="A 3D model of an astronaut"
             ar
@@ -49,6 +41,9 @@ const ARView = ({ match }) => {
             <button slot="ar-button" className="arbutton">
               View in your space
             </button>
+            <div id="ar-prompt">
+              <img src={hand} alt="ar_prompt"/>
+            </div>
           </model-viewer> 
         }
       </div>
@@ -59,7 +54,7 @@ const ARView = ({ match }) => {
       <div className={ARView}>
         {
           product && Object.keys(product).length &&
-          <model-viewer className="modelviewer" style={modelViewer} src={product.arModel.android}
+          <model-viewer src={ require(`./assets/${product.id}.glb`).default }
             ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
             alt="A 3D model of an astronaut"
             ar

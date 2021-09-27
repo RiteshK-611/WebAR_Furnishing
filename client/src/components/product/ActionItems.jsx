@@ -8,7 +8,6 @@ import { Visibility as View } from '@material-ui/icons';
 import { useDispatch } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import useStyle from './styles/actionItemsStyle'
-import chair from '../../images/rusticChair.jpg'
 import { payUsingPaytm } from '../../service/api';
 import { post } from '../../utils/paytm';
 
@@ -45,12 +44,12 @@ const ActionItems = ({ product }) => {
     return (
         <Box className={classes.leftContainer}>
             <img src={product.url}  className={classes.image} alt="" /><br/>
-            <a target="_blank" href={ product.arUrl } style={{textDecoration: 'none'}}  >
+            {/* <a target="_blank" href={ product.arUrl } style={{textDecoration: 'none'}}  >
                 <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
-            </a>
-            {/* <Link to={`/product/ar/${product.id}`}>
+            </a> */}
+            <Link to={`/product/ar/${product.id}`}>
                 <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
-            </Link> */}
+            </Link>
             <br/>
             <Button onClick={() => addItemToCart()} variant="contained" className={clsx(classes.button, classes.addTocart)}><Cart />Add to Cart</Button>
             <br/>

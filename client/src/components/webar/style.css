@@ -1,9 +1,13 @@
-.modelviewer {
+model-viewer {
     background-color: #eee;
     overflow-x: hidden;
     --poster-color: #eee;
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 30px;
 }
 
 .arbutton {
@@ -40,6 +44,28 @@
     outline: 1px solid #4285f4;
 }
 
-/* .ARView {
-    background-color: #000000;
-} */
+@keyframes circle {
+    from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+  
+@keyframes elongate {
+    from { transform: translateX(100px); }
+    to   { transform: translateX(-100px); }
+}
+  
+model-viewer > #ar-prompt {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    animation: elongate 2s infinite ease-in-out alternate;
+    display: none;
+}
+  
+  model-viewer[ar-status="session-started"] > #ar-prompt {
+    display: block;
+}
+  
+model-viewer > #ar-prompt > img {
+    animation: circle 4s linear infinite;
+}
