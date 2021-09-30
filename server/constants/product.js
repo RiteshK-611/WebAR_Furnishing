@@ -30,7 +30,7 @@ export const products = [
         tagline: 'Deal of the day',
         arUrl: 'https://soham-madhav.github.io/webAR-products/blueSofa.html',
         arModel: {
-            android: '',
+            android: './assets/product1.glb',
             ios: ''
         }
     },
@@ -52,7 +52,8 @@ export const products = [
         tagline: 'Pestige, Nova & more',
         arUrl: 'https://soham-madhav.github.io/webAR-products/asianBed.html',
         arModel: {
-            android: 'https://docs.google.com/uc?id=1IbBRuRmiJEJp6Ip5w0vbwu5kHXWHojfN'
+            android: './assets/product2.glb',
+            ios: ''
         }
     },
     { 
@@ -139,7 +140,7 @@ export const products = [
         tagline: 'Top Selling',
         arUrl: 'https://soham-madhav.github.io/webAR-products/coconchair.html',
         arModel: {
-            android: '',
+            android: './assets/product6.glb',
             ios: ''
         }
     },

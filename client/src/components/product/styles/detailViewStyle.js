@@ -44,6 +44,9 @@ export default makeStyles(theme => ({
         },
         wrapper: {
             display: 'flex'
+        },
+        title: {
+            fontSize: 28
         }
     })
     

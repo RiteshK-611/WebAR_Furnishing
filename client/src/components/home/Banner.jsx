@@ -1,15 +1,6 @@
 import Carousel from 'react-material-ui-carousel'
 import { bannerData } from '../../constants/data'
 import useStyle from './styles/BannerStyle';
-/* const useStyle = makeStyles({
-    carousel: {
-        marginTop: 70,
-    },
-    image: {
-        width: '100%',
-        height: 300
-    }
-}) */
 
 const Banner = () => {
     const classes = useStyle();

@@ -84,12 +84,12 @@ const DetailView = ({ match }) => {
                 </Box>
             } */}
             { product && Object.keys(product).length &&
-                <Grid container className={classes.container}> 
-                    <Grid item lg={4} md={4} sm={8} xs={12}>
+                <Grid container className={classes.container} justifyContent='space-around'> 
+                    <Grid item lg={6} md={6} sm={8} xs={12}>
                         <ActionItem product={product} />
                     </Grid>
-                    <Grid item lg={8} md={8} sm={8} xs={12} className={classes.rightcontainer}>
-                        <Typography>{product.title.longTitle}</Typography>
+                    <Grid item lg={5} md={5} sm={8} xs={12} className={classes.rightcontainer}>
+                        <Typography className={classes.title}>{product.title.longTitle}</Typography>
                             {/* <Typography className={clsx(classes.smallText, classes.greyTextcolor)}>
                                 8 Rating & 1 Review
                             </Typography> */}
