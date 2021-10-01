@@ -1,17 +1,6 @@
 //PART 4 @ 1:25:20
 
-import { Box, 
-    Dialog, 
-    DialogContent, 
-    Typography, 
-    Button, 
-    TextField, 
-    FormControl, 
-    IconButton, 
-    Input, 
-    InputAdornment, 
-    InputLabel,   
-} from '@material-ui/core'
+import { Box, Dialog, DialogContent, Typography, Button, TextField, FormControl, IconButton, Input, InputAdornment, InputLabel } from '@material-ui/core'
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import clsx from 'clsx'
@@ -73,6 +62,8 @@ const Login = ({ open, setOpen, setAccount }) => {
             showError(true);
         else {
             showError(false);
+            console.log(response.data.u)
+            localStorage.setItem('BeLogin', JSON.stringify({ login : response.data })) ;
             handleCloseLoginDialog();
             setAccount(login.username);
         }
@@ -81,6 +72,8 @@ const Login = ({ open, setOpen, setAccount }) => {
     const signupUser = async () => {
         let res = await authenticateSignup(signup);
         if(!res) return;
+        console.log(res.data.u)
+        localStorage.setItem('BeLogin', JSON.stringify({ login : res.data })) ;
         handleCloseLoginDialog();
         setAccount(signup.username);
     }
@@ -129,6 +122,7 @@ const Login = ({ open, setOpen, setAccount }) => {
                                 <TextField onChange={(e) => onInputChange(e)} name='username' label='Enter username' />
                                 <TextField onChange={(e) => onInputChange(e)} name='email' label='Enter your email ' />
                                 <TextField onChange={(e) => onInputChange(e)} name='password' label='Enter your pasword' />
+                                
                                 <FormControl className={clsx(classes.margin, classes.textField)}>
                                 <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                                 <Input
@@ -149,6 +143,7 @@ const Login = ({ open, setOpen, setAccount }) => {
                                     }
                                 />
                                 </FormControl>
+
                                 <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter your phone number' />
                                 <Button variant='contained' onClick={()=> signupUser() } className={classes.loginbtn}>Sign up</Button>
                             </Box>

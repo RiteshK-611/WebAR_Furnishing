@@ -19,6 +19,7 @@ const Profile = ({ account, setAccount }) => {
 
     const logout = () => {
         setAccount('');
+        localStorage.removeItem('BeLogin');
     }
     
     return (

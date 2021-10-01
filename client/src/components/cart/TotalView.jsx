@@ -2,6 +2,7 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
 import { useState, useEffect } from 'react';
 import useStyle from './styles/totalviewStyle';
+import GroupButtons from './GroupButtons';
  
 
 
@@ -14,6 +15,7 @@ const TotalView = ({ cartItems }) => {
 
     useEffect(() => {
         totalAmount();
+        
     }, [cartItems]);
 
     const totalAmount = () => {

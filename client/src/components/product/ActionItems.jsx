@@ -22,7 +22,7 @@ const ActionItems = ({ product }) => {
 
     const addItemToCart = () => {
         dispatch(addToCart(product.id));
-        history.push('/cart')
+        //history.push('/cart')
     }
 
     const buyNow = async () => {

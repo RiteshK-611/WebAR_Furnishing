@@ -1,6 +1,7 @@
 
 import { Card, makeStyles, Box, Typography, Button } from '@material-ui/core';
 import clsx from 'clsx';
+import { useState } from 'react';
 
 //component
 import GroupButtons from './GroupButtons';
@@ -43,6 +44,8 @@ const useStyle = makeStyles({
 })
 const CartItem = ({ item, removeItemFromCart }) => {
     const classes = useStyle();
+    //const [ itemPrice, setItemPrice ] = useState(item.price.cost);
+
     return (
         <Card className={classes.component}>
             <Box className={classes.leftComponent}>

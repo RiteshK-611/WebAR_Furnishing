@@ -5,7 +5,10 @@ export const userLogIn = async (request, response) => {
     try {
         let user = await User.findOne({ username: request.body.username, password: request.body.password });
         if(user) {
-            return response.status(200).json(`${request.body.username} login successfull`);
+            //`${request.body.username} login successfull`
+            return response.status(200).json({ u: request.body.username, pwd: request.body.password })
+       
+
         } else {
             return response.status(401).json('Invalid Login');
         }
@@ -26,7 +29,7 @@ export const userSignup = async (request, response) => {
         const user = request.body;
         const newUser = new User(user);
         await newUser.save();
-        response.status(200).json(`${user.firstName} has been successfully registered`);
+        response.status(200).json({ u: request.body.username, pwd: request.body.password });
         
     } catch (error) {
         console.log(error);

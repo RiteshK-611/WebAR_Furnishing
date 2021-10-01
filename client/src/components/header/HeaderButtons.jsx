@@ -19,14 +19,15 @@ const HeaderButtons = () => {
         setOpen(true);
     }
     
-
+    
     return (
         <Box className={classes.wrapper}>
             {
-                account ? <Profile account={account} setAccount={setAccount} /> : 
+                (localStorage.getItem('BeLogin')) ? <Profile account={ account ? account : JSON.parse(localStorage.getItem('BeLogin')).login.u } setAccount={setAccount} /> : 
                 <Link>
                     <Button className={classes.login} variant="contained" onClick={() => handleOpenLoginDialog() }>Login</Button>
                 </Link>
+                
             }
             {/* <Link ><Button variant="contained" onClick={handleOpenLoginDialog} className={classes.login}>Login</Button></Link>
              */}<Link to='/cart' className={classes.container}>
@@ -37,6 +38,7 @@ const HeaderButtons = () => {
             </Link>
             <LoginDialog open={open} setOpen={setOpen} setAccount={setAccount} />
         </Box>
+        
     )
 }
 

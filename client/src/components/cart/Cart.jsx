@@ -18,6 +18,7 @@ const Cart = () => {
 
     const classes = useStyle();
     const { cartItems } = useSelector(state => state.cart);
+    
 
     const dispatch = useDispatch();
 

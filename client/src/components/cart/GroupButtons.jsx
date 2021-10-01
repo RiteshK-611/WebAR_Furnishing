@@ -11,16 +11,20 @@ const useStyle = makeStyles({
     }
 
 })
-const GroupButtons = () => {
+const GroupButtons = ( ) => {
     const classes = useStyle();
     const [ counter, setCounter ] = useState(1);
 
     const handleIncrement = () => {
-        setCounter(counter => counter + 1);
+        console.log(counter);
+        setCounter(counter + 1);
+        console.log(counter);
     }
 
     const handleDecrement = () => {
-        setCounter(counter => counter - 1);
+        console.log(counter);
+        setCounter(counter - 1);
+        console.log(counter);
     }
     return (
 
@@ -31,5 +35,6 @@ const GroupButtons = () => {
         </ButtonGroup>
     )
 }
+
 
 export default GroupButtons;
