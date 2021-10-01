@@ -1,6 +1,6 @@
 
 import { Button, ButtonGroup, makeStyles } from "@material-ui/core";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useStyle = makeStyles({
     component: {
@@ -11,9 +11,13 @@ const useStyle = makeStyles({
     }
 
 })
-const GroupButtons = ( ) => {
+const GroupButtons = ({ setItemQty } ) => {
     const classes = useStyle();
     const [ counter, setCounter ] = useState(1);
+
+    useEffect(() => {
+        setItemQty(counter);
+    }, [counter])
 
     const handleIncrement = () => {
         console.log(counter);

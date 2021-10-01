@@ -26,12 +26,17 @@ const ActionItems = ({ product }) => {
     }
 
     const buyNow = async () => {
-        let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com' });
-        let information = {
-            action: 'https://securegw-stage.paytm.in/order/process',
-            params: response 
+        if(localStorage.getItem('BeLogin')){
+            let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com' });
+            let information = {
+                action: 'https://securegw-stage.paytm.in/order/process',
+                params: response 
+            }
+            post(information);
+        } else {
+            console.log("login first")
         }
-        post(information);
+        
     }    
    
     

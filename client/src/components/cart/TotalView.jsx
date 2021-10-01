@@ -13,6 +13,8 @@ const TotalView = ({ cartItems }) => {
     const [ price, setPrice ] = useState(0);
     const [ discount, setDiscount ] =  useState(0);
 
+    
+
     useEffect(() => {
         totalAmount();
         
@@ -21,7 +23,7 @@ const TotalView = ({ cartItems }) => {
     const totalAmount = () => {
         let price = 0, discount = 0;
         cartItems.map(item => {
-            price += item.price.mrp;
+            price += item.itemPrice;
             discount += (item.price.mrp - item.price.cost);
         });
         setPrice(price);
@@ -37,7 +39,7 @@ const TotalView = ({ cartItems }) => {
                 <Typography>Price ({cartItems.length} items)<span className={classes.price}>₹{price}</span></Typography>
                 <Typography>Discount <span className={classes.price}>-₹{discount}</span></Typography>
                 <Typography>Delivery Charge <span className={classes.price}>₹100</span></Typography>
-                <Typography className={classes.totalAmount}>Total Amount<span className={classes.price}>₹{price - discount  +40}</span></Typography>
+                <Typography className={classes.totalAmount}>Total Amount<span className={classes.price}>₹{price - discount  +100}</span></Typography>
                 <Typography style={{color: 'green'}}>You will Save ₹{discount - 40} on this order</Typography>
             </Box>
 

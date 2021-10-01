@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Box, Typography, Button, Grid  } from '@material-ui/core';
 import { removeFromCart } from '../../redux/actions/cartActions';
 
@@ -19,6 +19,13 @@ const Cart = () => {
     const classes = useStyle();
     const { cartItems } = useSelector(state => state.cart);
     
+    const [cartItemPrice, setCartItemPrice] = useState(0);
+    const [totalP, setTotalP] = useState(0)
+
+    //TRIAL CART
+
+
+    //TRIAL CART END
 
     const dispatch = useDispatch();
 
@@ -26,6 +33,7 @@ const Cart = () => {
         console.log(cartItems);
     })
 
+    
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));
     }
@@ -50,7 +58,8 @@ const Cart = () => {
                 </Box>
                 {
                     cartItems.map(item => (
-                        <CartItem item={item} removeItemFromCart={removeItemFromCart} />
+                            <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} />
+                        
                     ))
                 }
                 <Box className={classes.bottom}>
@@ -58,7 +67,7 @@ const Cart = () => {
                 </Box>
             </Grid>
             <Grid item lg={3} md={3} sm={12} xs={12}>
-                <TotalView cartItems={cartItems}  />
+                <TotalView cartItems={cartItems} />
             </Grid> 
         </Grid>
         :<EmptyCart/>

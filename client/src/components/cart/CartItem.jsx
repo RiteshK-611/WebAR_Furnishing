@@ -1,56 +1,34 @@
 
-import { Card, makeStyles, Box, Typography, Button } from '@material-ui/core';
+import { Card, Box, Typography, Button } from '@material-ui/core';
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //component
 import GroupButtons from './GroupButtons';
+import useStyle from './styles/cartItemStyle';
+import { addToCart } from '../../redux/actions/cartActions';
 
-const useStyle = makeStyles({
-    component: {
-        display: 'flex',
-        borderRadius: 0,
-        borderTop: '1px solid #f0f0f0'
-    },
-    leftComponent: {
-        margin: 20,
-        display: 'flex',
-        flexDirection: 'column'
 
-    },
-    rightComponent: {
-        margin: 20
-
-    },
-    smallText: {
-        fontSize: 14
-        
-    },
-    greyTextColor: {
-        color: '#878787'
-    },
-    price: {
-        fontSize: 18,
-        fontWeight: 600
-    },
-    image: {
-        height: 150,
-        width: 180
-    },
-    remove: {
-        marginTop: 20,
-        fontSize: 14
-    }
-})
-const CartItem = ({ item, removeItemFromCart }) => {
+const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP }) => {
     const classes = useStyle();
-    //const [ itemPrice, setItemPrice ] = useState(item.price.cost);
+    const [ itemQty, setItemQty ] = useState(1);
+    const [ itemPrice, setItemPrice ] = useState(item.price.mrp);
+
+    
+
+    useEffect(() => {
+        setItemPrice(itemQty * item.price.mrp )
+        setCartItemPrice(itemPrice)
+
+       
+
+    }, [itemQty])
 
     return (
         <Card className={classes.component}>
             <Box className={classes.leftComponent}>
                     <img src={item.url} className={classes.image} alt=""/>
-                    <GroupButtons />
+                    <GroupButtons setItemQty={setItemQty} />
             </Box>
 
             <Box className={classes.rightComponent}>
@@ -60,6 +38,7 @@ const CartItem = ({ item, removeItemFromCart }) => {
                     <span className={classes.price}>₹{item.price.cost}</span> &nbsp;&nbsp;&nbsp;
                     <span className = {classes.greyTextColor}><strike>₹{item.price.mrp}</strike></span> &nbsp;&nbsp;&nbsp;
                     <span style={{color: '#388E3C'}}>{item.price.discount} off</span> &nbsp;&nbsp;&nbsp;
+                    <span style={{color: '#388E3C'}}>{itemPrice} off</span> &nbsp;&nbsp;&nbsp;
                 </Typography>
                 <Button className={classes.remove} onClick={() => removeItemFromCart(item.id)}>Remove</Button>
             </Box>

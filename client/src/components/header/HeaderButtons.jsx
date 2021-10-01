@@ -23,7 +23,7 @@ const HeaderButtons = () => {
     return (
         <Box className={classes.wrapper}>
             {
-                (localStorage.getItem('BeLogin')) ? <Profile account={ account ? account : JSON.parse(localStorage.getItem('BeLogin')).login.u } setAccount={setAccount} /> : 
+                (localStorage.getItem('BeLogin')) ? <Profile account={ account!='' ? account : JSON.parse(localStorage.getItem('BeLogin')).login.u } setAccount={setAccount} /> : 
                 <Link>
                     <Button className={classes.login} variant="contained" onClick={() => handleOpenLoginDialog() }>Login</Button>
                 </Link>
