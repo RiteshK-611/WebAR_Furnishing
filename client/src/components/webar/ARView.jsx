@@ -37,26 +37,49 @@ const ARView = ({ match }) => {
   ) 
   {
     return (
-      <Grid container>
-        <div className={ARView}>
-          {
-            product && Object.keys(product).length && 
-            <model-viewer src={ require(`${product.arModel.android}`).default } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
-              ios-src={ require(`${product.arModel.ios}`).default }
-              alt="A 3D model of an astronaut"
-              ar
-              auto-rotate
-              camera-controls> 
+      <Grid container alignItems="center">
+        <Grid item>
+          <div className={ARView}>
+            {
+              product && Object.keys(product).length && 
+              <model-viewer src={ require(`${product.arModel.android}`).default } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
+                // ios-src={ require(`${product.arModel.ios}`).default }
+                alt="A 3D model of an astronaut"
+                ar
+                auto-rotate
+                camera-controls> 
 
-              <button slot="ar-button" className="arbutton">
-                View in your space
-              </button>
-              <div id="ar-prompt">
-                <img src={hand} alt="ar_prompt"/>
-              </div>
-            </model-viewer> 
-          }
-        </div>   
+                <button slot="ar-button" className="arbutton">
+                  View in your space
+                </button>
+                <div id="ar-prompt">
+                  <img src={hand} alt="ar_prompt"/>
+                </div>
+              </model-viewer> 
+            }
+          </div>   
+        </Grid>
+        <Grid item>
+          <Item>
+            {
+              product && Object.keys(product).length &&
+              <>
+                <Typography style={{color: 'black'}}>{product.title.longTitle}</Typography>
+                <br></br><br></br>
+                <div style={{textAlign: 'left'}}>
+                  INSTRUCTIONS
+                  <ol>
+                      <li>Click on VIEW MODEL IN YOUR SPACE. This opens your camera</li>
+                      <li>Hold your mobile first vertically then horizontally for 5 seconds each</li>
+                      <li>Then show the camera your surroundings so that it can recognize and is able to place the marker</li>
+                      <li>Once a marker like so (reticle image) appears, assume that this will be the center of the furniture selected</li>
+                      <li>Then tap on the screen once, in order to get the model</li>
+                  </ol>
+                </div>
+              </>
+            }
+          </Item>
+        </Grid>
       </Grid>
     );
   }
@@ -83,34 +106,34 @@ const ARView = ({ match }) => {
               <Item>
                 {
                   product && Object.keys(product).length &&
-                  <Typography style={{color: 'black'}}>{product.title.longTitle}</Typography>
+                  <>
+                    <Typography style={{color: 'black'}}>{product.title.longTitle}</Typography>
+                    <br></br><br></br><br></br>
+                    <div>
+                    <Typography>Scan this QR Code to view it on your Mobile </Typography>
+                    <QRCode 
+                      id="1234"
+                      value={window.location.href}
+                      size={128}
+                      bgColor={'#ffffff'}
+                      fgColor={'#000000'}
+                      level={'H'}
+                      includeMargin={true}
+                    />
+                  </div>
+                  <br></br><br></br>
+                  <div style={{textAlign: 'left'}}>
+                    INSTRUCTIONS
+                    <ol>
+                        <li>Click on VIEW MODEL IN YOUR SPACE. This opens your camera</li>
+                        <li>Hold your mobile first vertically then horizontally for 5 seconds each</li>
+                        <li>Then show the camera your surroundings so that it can recognize and is able to place the marker</li>
+                        <li>Once a marker like so (reticle image) appears, assume that this will be the center of the furniture selected</li>
+                        <li>Then tap on the screen once, in order to get the model</li>
+                    </ol>
+                  </div>
+                  </>
                 }
-              </Item>
-            </Grid>
-            <Grid item>
-              <Item>
-                <Typography>Scan this QR Code to view it on your Mobile </Typography>
-                <QRCode 
-                  id="1234"
-                  value={window.location.href}
-                  size={128}
-                  bgColor={'#ffffff'}
-                  fgColor={'#000000'}
-                  level={'H'}
-                  includeMargin={true}
-                />
-              </Item>
-            </Grid>
-            <Grid item>
-              <Item style={{textAlign: 'left'}}>
-                INSTRUCTIONS
-                <ol>
-                    <li>Click on VIEW MODEL IN YOUR SPACE. This opens your camera</li>
-                    <li>Hold your mobile first vertically then horizontally for 5 seconds each</li>
-                    <li>Then show the camera your surroundings so that it can recognize and is able to place the marker</li>
-                    <li>Once a marker like so (reticle image) appears, assume that this will be the center of the furniture selected</li>
-                    <li>Then tap on the screen once, in order to get the model</li>
-                </ol>
               </Item>
             </Grid>
           </Grid>
