@@ -12,7 +12,6 @@ const HeaderButtons = () => {
     const classes = useStyle();
     const [open, setOpen] = useState(false);
     const { account, setAccount } = useContext(LoginContext);
-
     const { cartItems } = useSelector(state => state.cart)
 
     const handleOpenLoginDialog = () => {
@@ -24,10 +23,8 @@ const HeaderButtons = () => {
         <Box className={classes.wrapper}>
             {
                 (localStorage.getItem('BeLogin')) ? <Profile account={ account!='' ? account : JSON.parse(localStorage.getItem('BeLogin')).login.u } setAccount={setAccount} /> : 
-                <Link>
-                    <Button className={classes.login} variant="contained" onClick={() => handleOpenLoginDialog() }>Login</Button>
-                </Link>
-                
+                <Button className={classes.login} variant="contained" onClick={() => handleOpenLoginDialog() }>Login</Button>
+            
             }
             {/* <Link ><Button variant="contained" onClick={handleOpenLoginDialog} className={classes.login}>Login</Button></Link>
              */}<Link to='/cart' className={classes.container}>

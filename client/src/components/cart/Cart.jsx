@@ -59,7 +59,6 @@ const Cart = () => {
                 {
                     cartItems.map(item => (
                             <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} />
-                        
                     ))
                 }
                 <Box className={classes.bottom}>

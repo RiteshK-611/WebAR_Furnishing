@@ -44,12 +44,9 @@ const Login = ({ open, setOpen, setAccount }) => {
     const [ error, showError] = useState(false);
     const [ account, toggleAccount ] = useState(accountInitialValues.login);
     
-
-
     const handleCloseLoginDialog = () => {
         setOpen(false);
         toggleAccount (accountInitialValues.login);
-        
     }
 
     const toggleSignup = () => {
@@ -107,15 +104,15 @@ const Login = ({ open, setOpen, setAccount }) => {
                     { (account.view ==='login') ?      
                             <Box className={classes.login}>
                                 <TextField onChange={(e) => onValueChange(e)} name='username' label='Enter username' />
-                                { error && <Typography className={classes.error}>Please enter valid Email ID/Mobile number</Typography> }
                                 <TextField onChange={(e) => onValueChange(e)} name='password' label='Enter your pasword' />
+                                { error && <Typography className={classes.error}>Please enter correct Username/Password !!</Typography> }
                                 <Typography className={classes.text}>By continuing, you agree to Woodstock's Terms of Use and Privacy Policy.</Typography>
                                 <Button variant="contained" className={classes.loginbtn} onClick={() => loginUser()} >Login</Button>
                                 <Typography style={{textAlign: 'center'}} className={classes.text} style={{textAlign:'center'}}>OR</Typography>
                                 <Button variant='contained' className={classes.requestbtn}>Request OTP</Button>
                                 <Typography onClick={() => toggleSignup()} className={classes.createText} >New to Woodstock? Create an account</Typography>
-                            </Box>        :
-
+                            </Box>       
+                             :
                             <Box className={classes.login}>
                                 <TextField onChange={(e) => onInputChange(e)} name='firstname' label='Enter your first name' />
                                 <TextField onChange={(e) => onInputChange(e)} name='lastname' label='Enter your last name' />
@@ -147,8 +144,6 @@ const Login = ({ open, setOpen, setAccount }) => {
                                 <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter your phone number' />
                                 <Button variant='contained' onClick={()=> signupUser() } className={classes.loginbtn}>Sign up</Button>
                             </Box>
-                    
-                    
                     }
                     
                 </Box>
