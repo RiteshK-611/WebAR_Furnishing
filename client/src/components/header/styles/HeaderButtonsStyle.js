@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     login: {
         background: '#fff',
-        color: '#2874f0',
+        color: '#000',
         fontWeight: '600',
         padding: 2,
         textTransform: 'none',
@@ -17,7 +17,7 @@ export default makeStyles((theme) => ({
             display: 'flex',
             alignItems: 'center',
             textDecoration: 'none',
-            color: '#fff'
+            // color: '#fff'
         },
         [theme.breakpoints.down('xs')]: {
             justifyContent: 'flex-start'  
@@ -30,6 +30,7 @@ export default makeStyles((theme) => ({
         }
     },
     container: {
+        color: '#fff',
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('xs')]: {

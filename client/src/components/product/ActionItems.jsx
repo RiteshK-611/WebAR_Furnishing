@@ -1,10 +1,8 @@
-
-import { Button, Box, requirePropFactory, Stack } from '@material-ui/core';
+import { Button, Box } from '@material-ui/core';
+import { Alert } from '@material-ui/lab';
 import clsx from 'clsx';
-import { BatteryUnknownOutlined, FormatAlignCenter, ShoppingCart as Cart } from '@material-ui/icons';
-import { ShoppingBasket as Buy } from '@material-ui/icons';
+import { ShoppingCart as Cart, ShoppingBasket as Buy, Visibility as View } from '@material-ui/icons';
 import { addToCart } from '../../redux/actions/cartActions';
-import { Visibility as View } from '@material-ui/icons';
 import { useDispatch } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import useStyle from './styles/actionItemsStyle'
@@ -34,15 +32,11 @@ const ActionItems = ({ product }) => {
             }
             post(information);
         } else {
-            console.log("login first")
+            alert("⚠️ Login before making payment")
         }
         
     }    
    
-    
-    //const decodedData = base64.decode( product.url );
-    //const imgPath = "../../images/rusticChair.jpg"
-    
     return (
         <Box className={classes.leftContainer}>
             {/* <Carousel 

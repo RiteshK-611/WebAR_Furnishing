@@ -13,7 +13,6 @@ import TotalView from './TotalView';
 import useStyle from './styles/cartstyle';
 
 
-
 const Cart = () => {
 
     const classes = useStyle();
@@ -50,7 +49,7 @@ const Cart = () => {
             post(information);
         }
         else {
-            console.log('login first')
+            alert("⚠️ Login before making payment")
         }
 
     }    
@@ -66,8 +65,7 @@ const Cart = () => {
                 </Box>
                 {
                     cartItems.map(item => (
-                            <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} setQty={setQty} />
-                        
+                        <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} setQty={setQty} />
                     ))
                 }
                 <Box className={classes.bottom}>

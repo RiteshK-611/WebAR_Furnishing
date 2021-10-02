@@ -38,14 +38,20 @@ const GroupButtons = ({ itemQty, setItemQty , item, setQty} ) => {
     }
 
     const handleDecrement = () => {
-        console.log(counter);
+        const index = cartItems.findIndex(product => product.info.id === item.info.id)
+       // cartItems[index].qty=counter;
+        
         setCounter(counter-1);
+        setItemQty(counter)
+        cartItems[index].qty=counter;
+        console.log(cartItems)
+        //dispatch(addToCart(item.info.id, counter));
         console.log(counter);
     }
     return (
 
         <ButtonGroup className={classes.component}>
-            <Button onClick={() => handleDecrement()} disabled={counter===1} className={classes.button}>-</Button>
+            <Button onClick={() => handleDecrement()} disabled={item.qty===1} className={classes.button}>-</Button>
             <Button>{item.qty}</Button>
             <Button onClick={() => handleIncrement()} className={classes.button}>+</Button>
         </ButtonGroup>

@@ -103,48 +103,48 @@ const Login = ({ open, setOpen, setAccount }) => {
                         <Typography style={{marginTop: 20}}>{account.subHeading}</Typography>
                     </Box>
                     { (account.view ==='login') ?      
-                            <Box className={classes.login}>
-                                <TextField onChange={(e) => onValueChange(e)} name='username' label='Enter username' />
-                                <TextField onChange={(e) => onValueChange(e)} name='password' label='Enter your pasword' />
-                                { error && <Typography className={classes.error}>Please enter correct Username/Password !!</Typography> }
-                                <Typography className={classes.text}>By continuing, you agree to Woodstock's Terms of Use and Privacy Policy.</Typography>
-                                <Button variant="contained" className={classes.loginbtn} onClick={() => loginUser()} >Login</Button>
-                                <Typography style={{textAlign: 'center'}} className={classes.text} style={{textAlign:'center'}}>OR</Typography>
-                                <Button variant='contained' className={classes.requestbtn}>Request OTP</Button>
-                                <Typography onClick={() => toggleSignup()} className={classes.createText} >New to Woodstock? Create an account</Typography>
-                            </Box>       
-                             :
-                            <Box className={classes.login}>
-                                <TextField onChange={(e) => onInputChange(e)} name='firstname' label='Enter your first name' />
-                                <TextField onChange={(e) => onInputChange(e)} name='lastname' label='Enter your last name' />
-                                <TextField onChange={(e) => onInputChange(e)} name='username' label='Enter username' />
-                                <TextField onChange={(e) => onInputChange(e)} name='email' label='Enter your email ' />
-                                <TextField onChange={(e) => onInputChange(e)} name='password' label='Enter your pasword' />
-                                
-                                <FormControl className={clsx(classes.margin, classes.textField)}>
-                                <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-                                <Input
-                                    id="standard-adornment-password"
-                                    type={signup.showPassword ? 'text' : 'password'}
-                                    value={signup.password}
-                                    onChange={(e) => onInputChange(e)}
-                                    endAdornment={
-                                    <InputAdornment position="end">
-                                        <IconButton
-                                            aria-label="toggle password visibility"
-                                            onClick={handleClickShowPassword}
-                                            onMouseDown={handleMouseDownPassword}
-                                        >
-                                        {signup.showPassword ? <Visibility /> : <VisibilityOff />}
-                                        </IconButton>
-                                    </InputAdornment>
-                                    }
-                                />
-                                </FormControl>
+                        <Box className={classes.login}>
+                            <TextField onChange={(e) => onValueChange(e)} name='username' label='Enter username' />
+                            <TextField onChange={(e) => onValueChange(e)} name='password' label='Enter your pasword' />
+                            { error && <Typography className={classes.error}>Please enter correct Username/Password !!</Typography> }
+                            <Typography className={classes.text}>By continuing, you agree to Woodstock's Terms of Use and Privacy Policy.</Typography>
+                            <Button variant="contained" className={classes.loginbtn} onClick={() => loginUser()} >Login</Button>
+                            <Typography style={{textAlign: 'center'}} className={classes.text} style={{textAlign:'center'}}>OR</Typography>
+                            <Button variant='contained' className={classes.requestbtn}>Request OTP</Button>
+                            <Typography onClick={() => toggleSignup()} className={classes.createText} >New to Woodstock? Create an account</Typography>
+                        </Box>       
+                            :
+                        <Box className={classes.login}>
+                            <TextField onChange={(e) => onInputChange(e)} name='firstname' label='Enter your first name' />
+                            <TextField onChange={(e) => onInputChange(e)} name='lastname' label='Enter your last name' />
+                            <TextField onChange={(e) => onInputChange(e)} name='username' label='Enter username' />
+                            <TextField onChange={(e) => onInputChange(e)} name='email' label='Enter your email ' />
+                            <TextField onChange={(e) => onInputChange(e)} name='password' label='Enter your pasword' />
+                            
+                            <FormControl className={clsx(classes.margin, classes.textField)}>
+                            <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                            <Input
+                                id="standard-adornment-password"
+                                type={signup.showPassword ? 'text' : 'password'}
+                                value={signup.password}
+                                onChange={(e) => onInputChange(e)}
+                                endAdornment={
+                                <InputAdornment position="end">
+                                    <IconButton
+                                        aria-label="toggle password visibility"
+                                        onClick={handleClickShowPassword}
+                                        onMouseDown={handleMouseDownPassword}
+                                    >
+                                    {signup.showPassword ? <Visibility /> : <VisibilityOff />}
+                                    </IconButton>
+                                </InputAdornment>
+                                }
+                            />
+                            </FormControl>
 
-                                <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter your phone number' />
-                                <Button variant='contained' onClick={()=> signupUser() } className={classes.loginbtn}>Sign up</Button>
-                            </Box>
+                            <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter your phone number' />
+                            <Button variant='contained' onClick={()=> signupUser() } className={classes.loginbtn}>Sign up</Button>
+                        </Box>
                     }
                     
                 </Box>
