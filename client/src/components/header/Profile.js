@@ -29,7 +29,7 @@ const Profile = ({ account, setAccount }) => {
     
     return (
         <>
-            <Link onClick={handleClick}><Typography style={{ marginTop: 2 }}>{account}</Typography></Link>
+            <Typography onClick={handleClick} style={{ marginTop: 2, cursor: 'pointer' }}>{account}</Typography>
             <Menu
                 anchorEl={open}
                 open={Boolean(open)}

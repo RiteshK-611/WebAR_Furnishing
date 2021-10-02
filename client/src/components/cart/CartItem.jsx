@@ -14,8 +14,6 @@ const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP, setQt
     const [ itemQty, setItemQty ] = useState(1);
     const [ itemPrice, setItemPrice ] = useState(item.info.price.cost);
 
-    
-
     useEffect(() => {
         setItemPrice(itemQty * item.info.price.mrp )
         setCartItemPrice(itemPrice)
