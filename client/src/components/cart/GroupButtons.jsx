@@ -1,6 +1,8 @@
 
 import { Button, ButtonGroup, makeStyles } from "@material-ui/core";
 import { useState, useEffect } from 'react';
+import { addToCart } from '../../redux/actions/cartActions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const useStyle = makeStyles({
     component: {
@@ -11,30 +13,40 @@ const useStyle = makeStyles({
     }
 
 })
-const GroupButtons = ({ setItemQty } ) => {
+const GroupButtons = ({ itemQty, setItemQty , item, setQty} ) => {
     const classes = useStyle();
-    const [ counter, setCounter ] = useState(1);
+    
+    const dispatch = useDispatch();
+    const { cartItems } = useSelector(state => state.cart);
+    const [ counter, setCounter ] = useState(item.qty);
 
+    
     useEffect(() => {
-        setItemQty(counter);
+        setQty(counter);
     }, [counter])
 
     const handleIncrement = () => {
-        console.log(counter);
-        setCounter(counter + 1);
+        const index = cartItems.findIndex(product => product.info.id === item.info.id)
+       // cartItems[index].qty=counter;
+        
+        setCounter(counter+1);
+        setItemQty(counter)
+        cartItems[index].qty=counter;
+        console.log(cartItems)
+        //dispatch(addToCart(item.info.id, counter));
         console.log(counter);
     }
 
     const handleDecrement = () => {
         console.log(counter);
-        setCounter(counter - 1);
+        setCounter(counter-1);
         console.log(counter);
     }
     return (
 
         <ButtonGroup className={classes.component}>
             <Button onClick={() => handleDecrement()} disabled={counter===1} className={classes.button}>-</Button>
-            <Button>{counter}</Button>
+            <Button>{item.qty}</Button>
             <Button onClick={() => handleIncrement()} className={classes.button}>+</Button>
         </ButtonGroup>
     )

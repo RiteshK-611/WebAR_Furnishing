@@ -9,38 +9,36 @@ import useStyle from './styles/cartItemStyle';
 import { addToCart } from '../../redux/actions/cartActions';
 
 
-const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP }) => {
+const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP, setQty }) => {
     const classes = useStyle();
     const [ itemQty, setItemQty ] = useState(1);
-    const [ itemPrice, setItemPrice ] = useState(item.price.mrp);
+    const [ itemPrice, setItemPrice ] = useState(item.info.price.cost);
 
     
 
     useEffect(() => {
-        setItemPrice(itemQty * item.price.mrp )
+        setItemPrice(itemQty * item.info.price.mrp )
         setCartItemPrice(itemPrice)
-
-       
 
     }, [itemQty])
 
     return (
         <Card className={classes.component}>
             <Box className={classes.leftComponent}>
-                    <img src={item.url} className={classes.image} alt=""/>
-                    <GroupButtons setItemQty={setItemQty} />
+                    <img src={item.info.url} className={classes.image} alt=""/>
+                    <GroupButtons itemQty={itemQty} setItemQty={setItemQty} item={item} setQty={setQty} />
             </Box>
 
             <Box className={classes.rightComponent}>
-                <Typography>{item.title.longTitle}</Typography>
+                <Typography>{item.info.title.longTitle}</Typography>
                 <Typography className={clsx(classes.smallText, classes.greyTextColor)} style={{marginTop: 10}}>Seller: SuperComNet</Typography>
                 <Typography style={{margin: '20px 0'}}>
-                    <span className={classes.price}>₹{item.price.cost}</span> &nbsp;&nbsp;&nbsp;
-                    <span className = {classes.greyTextColor}><strike>₹{item.price.mrp}</strike></span> &nbsp;&nbsp;&nbsp;
-                    <span style={{color: '#388E3C'}}>{item.price.discount} off</span> &nbsp;&nbsp;&nbsp;
-                    <span style={{color: '#388E3C'}}>{itemPrice} off</span> &nbsp;&nbsp;&nbsp;
+                    <span className={classes.price}>₹{item.info.price.cost}</span> &nbsp;&nbsp;&nbsp;
+                    <span className = {classes.greyTextColor}><strike>₹{item.info.price.mrp}</strike></span> &nbsp;&nbsp;&nbsp;
+                    <span style={{color: '#388E3C'}}>{item.info.price.discount} off</span> &nbsp;&nbsp;&nbsp;
+                   {/*  <span style={{color: '#388E3C'}}>{itemPrice} off</span> &nbsp;&nbsp;&nbsp; */}
                 </Typography>
-                <Button className={classes.remove} onClick={() => removeItemFromCart(item.id)}>Remove</Button>
+                {/* <Button className={classes.remove} onClick={() => removeItemFromCart(item.info.id)}>Remove</Button> */}
             </Box>
         </Card>
     )

@@ -22,6 +22,7 @@ const Cart = () => {
     const [cartItemPrice, setCartItemPrice] = useState(0);
     const [totalP, setTotalP] = useState(0)
 
+    const [qty, setQty] = useState(1);
     //TRIAL CART
 
 
@@ -30,21 +31,28 @@ const Cart = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(cartItems);
-    })
+        
+    }, [cartItems])
 
     
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));
     }
     const buyNow = async () => {
-        let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com'});
-    
-        let information = {
-            action: 'https://securegw-stage.paytm.in/order/process',
-            params: response   
+        if(localStorage.getItem('BeLogin') !=null){
+            
+            let response = await payUsingPaytm({ amount: 500, email: 'bsmhatre888@gmail.com'});
+        
+            let information = {
+                action: 'https://securegw-stage.paytm.in/order/process',
+                params: response   
+            }
+            post(information);
         }
-        post(information);
+        else {
+            console.log('login first')
+        }
+
     }    
 
     return (
@@ -58,7 +66,7 @@ const Cart = () => {
                 </Box>
                 {
                     cartItems.map(item => (
-                            <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} />
+                            <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} setQty={setQty} />
                         
                     ))
                 }
@@ -67,7 +75,7 @@ const Cart = () => {
                 </Box>
             </Grid>
             <Grid item lg={3} md={3} sm={12} xs={12}>
-                <TotalView cartItems={cartItems} />
+                <TotalView cartItems={cartItems} qty={qty} />
             </Grid> 
         </Grid>
         :<EmptyCart/>

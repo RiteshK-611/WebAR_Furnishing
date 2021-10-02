@@ -24,6 +24,7 @@ const signupInitialValues = {
     showPassword: false
 };
 
+
 const accountInitialValues = {
     login: {
         view: 'login',

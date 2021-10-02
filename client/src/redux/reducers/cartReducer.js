@@ -7,20 +7,28 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
     {
         case actionTypes.ADD_TO_CART:
 
-            const item = action.payload;
+            const item = action.payload
 
-            const exist = state.cartItems.find(product => product.id === item.id)
+            const exist = state.cartItems.find(product => product.id === item.info.id)
 
             if(exist) {
-                return;
+                return ;
+                /* const index = state.cartItems.findIndex(product => product.id === item.info.id)
+                
+                return state.cartItems[index].qty =+1  ; */
             }
                          
+            else {
+                return { ...state, cartItems: [...state.cartItems,  item ] }
+            }
             
-            return { ...state, cartItems: [...state.cartItems, item] }
 
         case actionTypes.REMOVE_FROM_CART:
             return { ...state, cartItems: state.cartItems.filter(product => product.id !== action.payload) }   
         
+        case 'UPATE_ITEM_QTY':
+            return ;
+
         default:
             return state;    
     }

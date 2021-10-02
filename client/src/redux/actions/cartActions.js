@@ -7,8 +7,21 @@ export const addToCart = (id) => async(dispatch) => {
     try{
         const { data } = await axios.get(`${url}/product/${id}`);
         
+       /*  let tempProduct={}
+        if(q){
+             tempProduct = { info: data, qty : q }
+        }
+        else {
+             tempProduct = { info: data, qty : 1 }
+        } */
+        //THE QTY IS UPDATING BUT IT'S LIKE 1 1 2 3
 
-        dispatch({ type: actionTypes.ADD_TO_CART, payload: data  })
+        let tempProduct={}
+        tempProduct = { info: data, qty : 1 }
+
+        console.log(tempProduct.info.id)
+
+        dispatch({ type: actionTypes.ADD_TO_CART, payload: tempProduct  })
 
     } catch (error) {
         console.log('Error while calling add to cart api');
@@ -18,4 +31,8 @@ export const addToCart = (id) => async(dispatch) => {
 export const removeFromCart = (id) => (dispatch) => {
     dispatch({ type: actionTypes.REMOVE_FROM_CART, payload: id})
 
+}
+
+export const updateCartItemQty = (id, qty) => (dispatch) => {
+    dispatch({ type: 'UPATE_ITEM_QTY', payload: id })
 }
