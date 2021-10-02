@@ -30,8 +30,8 @@ export const products = [
         tagline: 'Deal of the day',
         arUrl: 'https://soham-madhav.github.io/webAR-products/blueSofa.html',
         arModel: {
-            android: './assets/product1.glb',
-            ios: ''
+            android: './assets/product1/bluesofa.glb',
+            ios: './assets/product1/bluesofa.usdz'
         }
     },
     { 
@@ -52,8 +52,8 @@ export const products = [
         tagline: 'Pestige, Nova & more',
         arUrl: 'https://soham-madhav.github.io/webAR-products/asianBed.html',
         arModel: {
-            android: './assets/product2.glb',
-            ios: ''
+            android: './assets/product2/asian-bed.glb',
+            ios: './assets/product2/asian-bed.usdz'
         }
     },
     { 
@@ -74,8 +74,8 @@ export const products = [
         tagline: 'Deal of the Day',
         arUrl: 'https://soham-madhav.github.io/webAR-products/redShelf.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product3/shelf.glb',
+            ios: './assets/product3/shelf.usdz'
         }
     },
     { 
@@ -96,8 +96,8 @@ export const products = [
         tagline: 'Best Seller',
         arUrl: 'https://soham-madhav.github.io/webAR-products/biggreenchair.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product4/bigchair.glb',
+            ios: './assets/product4/bigchair.usdz'
         }
     },
     { 
@@ -118,8 +118,8 @@ export const products = [
         tagline: 'Kubra, Nova & more',
         arUrl: 'https://soham-madhav.github.io/webAR-products/grayLsofa.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product5/grayLsofa.glb',
+            ios: './assets/product5/grayLsofa.usdz'
         }
     },
     { 
@@ -140,8 +140,8 @@ export const products = [
         tagline: 'Top Selling',
         arUrl: 'https://soham-madhav.github.io/webAR-products/coconchair.html',
         arModel: {
-            android: './assets/product6.glb',
-            ios: ''
+            android: './assets/product6/coconchair.glb',
+            ios: './assets/product6/coconchair.usdz'
         }
     },
     { 
@@ -162,8 +162,8 @@ export const products = [
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/rusticChair.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product7/rusticchair.glb',
+            ios: './assets/product7/rusticchair.usdz'
         }
     },
     { 
@@ -184,8 +184,8 @@ export const products = [
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/sidetable.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product8/sidetable.glb',
+            ios: './assets/product8/sidetable.usdz'
         }
     },
     { 
@@ -206,8 +206,8 @@ export const products = [
         tagline: 'Grab Now!',
         arUrl: 'https://soham-madhav.github.io/webAR-products/nightstand.html',
         arModel: {
-            android: '',
-            ios: ''
+            android: './assets/product9/nightstand.glb',
+            ios: './assets/product9/nightstand.usdz'
         }
     }
 ];
