@@ -24,11 +24,11 @@ const MidSection = ({products}) => {
                                    {product.title.longTitle}
                                    </Typography>
                                 </CardContent>
-                                <CardActions className={classes.button}>
+                                {/* <CardActions className={classes.button}>
                                    <Button variant="contained" size="small" color="secondary">
                                     Add to Cart
                                    </Button>
-                                </CardActions>
+                                </CardActions> */}
                             </Card>
                         </Link>
                     </Grid>

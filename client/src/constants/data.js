@@ -1,11 +1,12 @@
-import b1 from '../images/b1.jpg'
-import b2 from '../images/b2.jpeg'
-import b3 from '../images/b3.jpg'
-import b4 from '../images/b4.jpg'
+import b1 from '../images/b1.png'
+import b2 from '../images/b2.jpg'
+import b3 from '../images/b3.png'
+import b4 from '../images/b4.png'
 import b5 from '../images/b5.jpg'
+import b6 from '../images/b6.png'
 
 export const bannerData = [
-    b1, b2, b3, b4, b5
+    b1, b2, b3, b4, b5, b6
 ];
 
 export const products = [

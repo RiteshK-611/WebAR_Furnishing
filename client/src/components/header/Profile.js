@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, Menu, MenuItem } from '@material-ui/core';
-import { ExitToAppIcon } from '@material-ui/icons';
+import { ExitToApp } from '@material-ui/icons';
 import useStyle from './styles/profileStyle';
 import {  useSelector } from 'react-redux';
 
@@ -34,7 +34,7 @@ const Profile = ({ account, setAccount }) => {
                 className={classes.component}
             >
                 <MenuItem onClick={() => { handleClose(); logout(); }}>
-                    <ExitToAppIcon fontSize='small' color='primary'/> 
+                    <ExitToApp fontSize='small' color='primary'/> 
                     <Typography className={classes.logout}>Logout</Typography>
                 </MenuItem>
             </Menu>
