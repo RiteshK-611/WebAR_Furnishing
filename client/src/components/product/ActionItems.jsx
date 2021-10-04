@@ -62,7 +62,7 @@ const ActionItems = ({ product }) => {
             {/* <a target="_blank" href={ product.arUrl } style={{textDecoration: 'none'}}  >
                 <Button variant="contained" className={clsx(classes.button, classes.viewAr)}><View />View in AR</Button>
             </a> */}
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+            <div className={classes.buttons}>
                 {/* <Button href={product.arUrl} variant="contained" className={clsx(classes.button, classes.viewAr)} startIcon={<View />}>View in AR</Button> */}
                 <Button component={Link} to={`/product/ar/${product.id}`} variant="contained" className={clsx(classes.button, classes.viewAr)} startIcon={<View />}>View in AR</Button>
                 <Button onClick={() => addItemToCart()} variant="contained" className={clsx(classes.button, classes.addTocart)} startIcon={<Cart />}>Add to Cart</Button>

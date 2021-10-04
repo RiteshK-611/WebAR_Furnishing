@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     search: {
-        borderRadius: 5,
-        backgroundColor: '#fff',
+        borderRadius: 25,
+        backgroundColor: '#e4e4e4',
         marginLeft: 50,
         width: '38%',
         display: 'flex',

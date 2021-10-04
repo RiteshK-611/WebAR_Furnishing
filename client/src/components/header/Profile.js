@@ -26,14 +26,15 @@ const Profile = ({ account, setAccount }) => {
     
     return (
         <>
-            <Typography onClick={handleClick} style={{ marginTop: 2, cursor: 'pointer' }}>{account}</Typography>
+            <Typography onClick={handleClick} style={{ marginTop: 2, cursor: 'pointer', color: '#000' }}>{account}</Typography>
             <Menu
                 anchorEl={open}
                 open={Boolean(open)}
                 onClose={handleClose}
                 className={classes.component}
+                style={{paddingTop: 0, paddingBottom: 0}}
             >
-                <MenuItem onClick={() => { handleClose(); logout(); }}>
+                <MenuItem disablePadding='true' onClick={() => { handleClose(); logout(); }}>
                     <ExitToApp fontSize='small' color='primary'/> 
                     <Typography className={classes.logout}>Logout</Typography>
                 </MenuItem>

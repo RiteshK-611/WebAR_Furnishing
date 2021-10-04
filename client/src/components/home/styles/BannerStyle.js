@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
         carousel: {
-            marginTop: 30,
+            marginTop: 25,
         },
         image: {
             width: '100%',

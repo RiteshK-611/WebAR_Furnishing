@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 import HeaderButtons from './HeaderButtons'
 import { Link } from 'react-router-dom'
 import useStyle from './styles/HeaderStyle'
-import WoodStockLogo from '../../images/Woodstock.png'
+import logo from '../../images/logo.png'
 
 const Header = () => {
     const classes = useStyle();
@@ -15,9 +15,9 @@ const Header = () => {
         return (
             <AppBar className={classes.header}>
                 <Toolbar style={{display: 'flex', flexDirection: 'column'}}>
-                    <Grid style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                    <Grid style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
                         <Link to='/' className={classes.component}>
-                            <img src={WoodStockLogo} alt="logo" className={classes.logo} />
+                            <img src={logo} alt="logo" className={classes.logo} />
                         </Link>
                         <HeaderButtons />
                     </Grid>
@@ -29,9 +29,9 @@ const Header = () => {
     else {
         return (
             <AppBar className={classes.header}>
-                <Toolbar>
+                <Toolbar style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
                     <Link to='/' className={classes.component}>
-                        <img src={WoodStockLogo} alt="logo" className={classes.logo} />
+                        <img src={logo} alt="logo" className={classes.logo} />
                     </Link>
                     <SearchBar />
                     <HeaderButtons />

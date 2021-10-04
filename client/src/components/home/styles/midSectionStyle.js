@@ -18,7 +18,8 @@ export default makeStyles((theme) => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: '#fcfcfc'
     },
     cardMedia: {
         height: 250,

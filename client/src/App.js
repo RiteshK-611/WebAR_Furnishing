@@ -9,6 +9,7 @@ import ARView from './components/webar/ARView';
 import { Box } from '@material-ui/core'
 import TemplateProvider from './templates/TemplateProvider';
 import ContextProvider from './context/ContextProvider';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route exact path='/product/ar/:id' component={ARView} />
             </Switch>
           </Box>
+          {/* <Footer />   */}
         </BrowserRouter>
       </ContextProvider>
     </TemplateProvider>

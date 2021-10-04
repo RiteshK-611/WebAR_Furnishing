@@ -10,9 +10,9 @@ export default makeStyles(theme => ({
             
             background: '#fff',
             display: 'flex',
-            [theme.breakpoints.down('md')]: {
-                marginLeft: 5
-            }
+            // [theme.breakpoints.down('md')]: {
+            //     marginLeft: 5
+            // }
         },
         rightcontainer:{
             marginTop: 50,
@@ -35,7 +35,7 @@ export default makeStyles(theme => ({
             color: '#878787'
         },
         price: {
-            fontSize: 28
+            fontSize: 24
         },
         badge: {
             fontSize: 16,

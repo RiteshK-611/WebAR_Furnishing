@@ -6,6 +6,7 @@ export default makeStyles({
     },
     logout: {
         fontSize: 14,
-        marginLeft: 20
+        marginLeft: 20,
+        padding: 0
     }
 })
