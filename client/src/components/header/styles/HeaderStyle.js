@@ -8,14 +8,15 @@ export default makeStyles((theme) => ({
     logo: {
         width: 100,
         marginTop: 5,
-        // [theme.breakpoints.down('xs')]: {
-        //     marginTop: 5,
-        // }
+        [theme.breakpoints.down('xs')]: {
+            width: 70,
+            marginTop: 18,
+        }
     },
     component: {
         marginLeft: '11%',
         [theme.breakpoints.down('xs')]: {
-            // marginLeft: '25%',
+            marginLeft: 0,
             marginRight: '20%'
             // width: '50px'
         }

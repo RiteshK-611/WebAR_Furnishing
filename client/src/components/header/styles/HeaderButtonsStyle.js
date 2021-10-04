@@ -8,8 +8,9 @@ export default makeStyles((theme) => ({
         padding: 2,
         textTransform: 'none',
         [theme.breakpoints.down('xs')]: {
-            padding: 5,
-            marginTop: 5  
+            // padding: 5,
+            marginTop: 18,
+            marginBottom: 5  
         }
     },
     wrapper: {
@@ -23,7 +24,12 @@ export default makeStyles((theme) => ({
             textDecoration: 'none',
         },
         [theme.breakpoints.down('xs')]: {
-            justifyContent: 'flex-start',  
+            display: 'flex',
+            '& > *': {
+                marginRight: 20,
+                fontsize: 9,
+                textDecoration: 'none',
+            },
         }
     },
     cart: {
@@ -38,7 +44,8 @@ export default makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'space-evenly',
         [theme.breakpoints.down('xs')]: {
-            marginRight: 90
+            marginRight: 90,
+            marginTop: 20
         }
     }
     })

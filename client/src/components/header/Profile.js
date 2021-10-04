@@ -32,7 +32,9 @@ const Profile = ({ account, setAccount }) => {
                 open={Boolean(open)}
                 onClose={handleClose}
                 className={classes.component}
-                style={{paddingTop: 0, paddingBottom: 0}}
+                MenuListProps={{
+                    classes: {padding: classes.padding},
+                }}
             >
                 <MenuItem disablePadding='true' onClick={() => { handleClose(); logout(); }}>
                     <ExitToApp fontSize='small' color='primary'/> 
