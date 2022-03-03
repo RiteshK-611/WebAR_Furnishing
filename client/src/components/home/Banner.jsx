@@ -10,12 +10,14 @@ const Banner = () => {
             animation="slide" 
             navButtonsAlwaysVisible={true} 
             indicators={false}
+            fullHeightHover={false}
             navButtonsProps={{
                 style: {
                     backgroundColor: '#fff',
                     color: '#494949',
                     borderRadius: 0,
                     margin: 0,
+                    padding: "25px 8px"
                 }
             }}
             className={classes.carousel}

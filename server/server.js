@@ -31,9 +31,9 @@ const URL = `mongodb+srv://${username}:${password}@cluster0.p88y7.mongodb.net/ec
 
 Connection(process.env.MONGODB_URI || URL);
 
-if(process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'))
-}
+// if(process.env.NODE_ENV === 'production') {
+//     app.use(express.static('client/build'))
+// }
 
 app.listen(PORT, () => console.log(`Server is successfully running on PORT ${PORT}`));
 
