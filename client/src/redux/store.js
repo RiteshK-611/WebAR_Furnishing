@@ -9,10 +9,11 @@ const reducer = combineReducers({
     getProducts: getProductReducer,
     getProductDetails: getProductDetailsReducer, 
 
-    ///getProductDetails: getProductDetailsReducer
 })
 
 const middleware = [thunk];
+
+console.log("Middleware: ", middleware)
 
 const store = createStore(
     reducer, 

@@ -1,13 +1,15 @@
 
-import { Card, Box, Typography } from '@material-ui/core';
+import { Card, Box, Typography, Button } from '@material-ui/core';
 // import { Button } from '@material-ui/core';
 import clsx from 'clsx';
 import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
 //component
 import GroupButtons from './GroupButtons';
 import useStyle from './styles/cartItemStyle';
 // import { addToCart } from '../../redux/actions/cartActions';
+import { removeFromCart } from '../../redux/actions/cartActions';
 
 
 const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP, setQty }) => {
@@ -20,6 +22,13 @@ const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP, setQt
         setCartItemPrice(itemPrice)
 
     }, [itemQty, item, itemPrice, setCartItemPrice])
+
+    const dispatch = useDispatch();
+
+    const removeItemsFromCart = (id) => {
+        dispatch(removeFromCart(id));
+        console.log("Item", id, "Removed from cart");
+    }
 
     return (
         <Card className={classes.component}>
@@ -37,7 +46,7 @@ const CartItem = ({ item, removeItemFromCart, setCartItemPrice, setTotalP, setQt
                     <span style={{color: '#388E3C'}}>{item.info.price.discount} off</span> &nbsp;&nbsp;&nbsp;
                    {/*  <span style={{color: '#388E3C'}}>{itemPrice} off</span> &nbsp;&nbsp;&nbsp; */}
                 </Typography>
-                {/* <Button className={classes.remove} onClick={() => removeItemFromCart(item.info.id)}>Remove</Button> */}
+                <Button className={classes.remove} onClick={() => removeItemsFromCart(item.info.id)}>Remove</Button>
             </Box>
         </Card>
     )

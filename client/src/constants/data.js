@@ -6,7 +6,31 @@ import b5 from '../images/b5.jpg'
 import b6 from '../images/b6.png'
 
 export const bannerData = [
-    b1, b2, b3, b4, b5, b6
+    // b1, b2, b3, b4, b5, b6
+    {
+        id: 'banner1',
+        img: b1
+    },
+    {
+        id: 'banner2',
+        img: b2
+    },
+    {
+        id: 'banner3',
+        img: b3
+    },
+    {
+        id: 'banner4',
+        img: b4
+    },
+    {
+        id: 'banner5',
+        img: b5
+    },
+    {
+        id: 'banner6',
+        img: b6
+    },
 ];
 
 export const products = [

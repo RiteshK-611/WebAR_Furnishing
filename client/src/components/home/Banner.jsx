@@ -23,7 +23,7 @@ const Banner = () => {
             className={classes.carousel}
         >
             {
-                bannerData.map( images => <img src={images} alt="bannerimg" className={classes.image} /> )
+                bannerData.map( images => <img key={images.id} src={images.img} alt="bannerimg" className={classes.image} /> )
             }
         </Carousel>
     )

@@ -14,7 +14,7 @@ const useStyle = makeStyles({
     }
 
 })
-const GroupButtons = ({ itemQty, setItemQty , item, setQty} ) => {
+const GroupButtons = ({ itemQty, setItemQty , item, setQty } ) => {
     const classes = useStyle();
     
     // const dispatch = useDispatch();
@@ -24,7 +24,8 @@ const GroupButtons = ({ itemQty, setItemQty , item, setQty} ) => {
     
     useEffect(() => {
         setQty(counter);
-    }, [counter, setQty]);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    }, [counter, setQty, cartItems]);
 
     const handleIncrement = () => {
         const index = cartItems.findIndex(product => product.info.id === item.info.id)
