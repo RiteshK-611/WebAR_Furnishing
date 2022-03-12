@@ -24,9 +24,11 @@ export default makeStyles((theme) => ({
             textDecoration: 'none',
         },
         [theme.breakpoints.down('xs')]: {
+            // margin: '0 -10% 0 auto',
+            marginRight: '-12%',
             display: 'flex',
             '& > *': {
-                marginRight: 20,
+                marginRight: 30,
                 fontsize: 9,
                 textDecoration: 'none',
             },

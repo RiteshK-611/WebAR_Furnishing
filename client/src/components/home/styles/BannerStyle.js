@@ -9,8 +9,15 @@ export default makeStyles((theme) => ({
             height: 400,
             [theme.breakpoints.down('sm')]: {
                 objectFit: 'cover',
-                height: 180
+                height: 280
             }
+        },
+        navbtn: {
+            backgroundColor: '#fff',
+            color: '#494949',
+            borderRadius: 0,
+            margin: 0,
+            padding: "25px 8px"
         }
     })
 )  
