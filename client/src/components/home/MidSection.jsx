@@ -10,7 +10,7 @@ const MidSection = ({products}) => {
         <Container className={classes.cardGrid}>
             <Grid container spacing={4}>
                 {products.map((product) => (
-                    <Grid item key={product} xs={12} sm={6} md={4}>
+                    <Grid item key={product.id} xs={12} sm={6} md={4}>
                         <Link to={`/product/${product.id}`} style={{textDecoration: 'none'}}>
                             <Card className={classes.card}>
                                 <CardActionArea>

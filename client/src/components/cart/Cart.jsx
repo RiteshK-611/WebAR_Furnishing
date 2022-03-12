@@ -15,6 +15,7 @@ import useStyle from './styles/cartstyle';
 
 const Cart = () => {
 
+
     const classes = useStyle();
     const { cartItems } = useSelector(state => state.cart);
     
@@ -32,7 +33,7 @@ const Cart = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        
+        // localStorage.setItem("cartItems", JSON.stringify(cartItems)) 
     }, [cartItems])
 
     
@@ -67,7 +68,7 @@ const Cart = () => {
                 </Box>
                 {
                     cartItems.map(item => (
-                        <CartItem item={item} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} setQty={setQty} />
+                        <CartItem item={item} key={item.id} removeItemFromCart={removeItemFromCart} setCartItemPrice={setCartItemPrice} setQty={setQty} />
                     ))
                 }
                 <Box className={classes.bottom}>

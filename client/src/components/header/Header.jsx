@@ -14,13 +14,13 @@ const Header = () => {
     {
         return (
             <AppBar className={classes.header}>
+                <Grid style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+                    <Link to='/' className={classes.component}>
+                        <img src={logo} alt="logo" className={classes.logo} />
+                    </Link>
+                    <HeaderButtons />
+                </Grid>
                 <Toolbar style={{display: 'flex', flexDirection: 'column'}}>
-                    <Grid style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
-                        <Link to='/' className={classes.component}>
-                            <img src={logo} alt="logo" className={classes.logo} />
-                        </Link>
-                        <HeaderButtons />
-                    </Grid>
                         <SearchBar />
                 </Toolbar>
             </AppBar>

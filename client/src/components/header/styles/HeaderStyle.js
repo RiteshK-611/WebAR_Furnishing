@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
     component: {
         marginLeft: '11%',
         [theme.breakpoints.down('xs')]: {
-            marginLeft: 0,
+            marginLeft: '6%',
             marginRight: '20%'
             // width: '50px'
         }

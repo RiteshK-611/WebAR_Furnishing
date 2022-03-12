@@ -19,7 +19,7 @@ export const addToCart = (id) => async(dispatch) => {
         let tempProduct={}
         tempProduct = { info: data, qty : 1 }
 
-        console.log(tempProduct.info.id)
+        console.log("TempProduct: ", tempProduct.info.id)
 
         dispatch({ type: actionTypes.ADD_TO_CART, payload: tempProduct  })
 
@@ -34,5 +34,5 @@ export const removeFromCart = (id) => (dispatch) => {
 }
 
 export const updateCartItemQty = (id, qty) => (dispatch) => {
-    dispatch({ type: 'UPATE_ITEM_QTY', payload: id })
+    dispatch({ type: 'UPDATE_ITEM_QTY', payload: id })
 }

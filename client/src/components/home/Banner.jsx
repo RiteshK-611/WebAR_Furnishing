@@ -1,32 +1,51 @@
+import {useMediaQuery, useTheme} from '@material-ui/core'
 import Carousel from 'react-material-ui-carousel'
 import { bannerData } from '../../constants/data'
 import useStyle from './styles/BannerStyle';
 
 const Banner = () => {
     const classes = useStyle();
-    return (
-        <Carousel 
-            autoPlay={true} 
-            animation="slide" 
-            navButtonsAlwaysVisible={true} 
-            indicators={false}
-            fullHeightHover={false}
-            navButtonsProps={{
-                style: {
-                    backgroundColor: '#fff',
-                    color: '#494949',
-                    borderRadius: 0,
-                    margin: 0,
-                    padding: "25px 8px"
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+    if(matches) {
+        return (
+            <Carousel 
+                autoPlay={true} 
+                animation="slide" 
+                navButtonsAlwaysVisible={false} 
+                indicators={false}
+                fullHeightHover={false}
+                swipe={true}
+                navButtonsProps={{
+                    className: classes.navbtn,
+                }}
+                className={classes.carousel}
+            >
+                {
+                    bannerData.map( images => <img key={images.id} src={images.img} alt="bannerimg" className={classes.image} /> )
                 }
-            }}
-            className={classes.carousel}
-        >
-            {
-                bannerData.map( images => <img src={images} alt="bannerimg" className={classes.image} /> )
-            }
-        </Carousel>
-    )
+            </Carousel>
+        )
+    }
+    else {
+        return (
+            <Carousel 
+                autoPlay={true} 
+                animation="slide" 
+                navButtonsAlwaysVisible={true} 
+                indicators={false}
+                fullHeightHover={false}
+                navButtonsProps={{
+                    className: classes.navbtn,
+                }}
+                className={classes.carousel}
+            >
+                {
+                    bannerData.map( images => <img key={images.id} src={images.img} alt="bannerimg" className={classes.image} /> )
+                }
+            </Carousel>
+        )
+    }
 }
 
 export default Banner
