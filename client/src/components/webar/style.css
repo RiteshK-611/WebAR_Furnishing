@@ -65,7 +65,7 @@ model-viewer > #ar-prompt {
     display: none;
 }
   
-  model-viewer[ar-status="session-started"] > #ar-prompt {
+model-viewer[ar-status="session-started"] > #ar-prompt {
     display: block;
 }
   
@@ -73,8 +73,25 @@ model-viewer > #ar-prompt > img {
     animation: circle 4s linear infinite;
 }
 
+@media screen and (max-width: 850px) and (min-width: 601px) {
+    model-viewer {
+        margin: 5% 3% 0 3%;
+        overflow-x: hidden;
+        width: 94%;
+        height: 60vh;
+        border: 1px solid;
+        border-radius: 10px;
+        /* margin: ;    */
+    }
+}
+
 @media screen and (max-width: 600px) {
     model-viewer {
-        margin: 2    
+        margin: 15% 3% 0 3%;
+        overflow-x: hidden;
+        width: 94%;
+        height: 60vh;
+        border: 1px solid;
+        border-radius: 10px;
     }
 }

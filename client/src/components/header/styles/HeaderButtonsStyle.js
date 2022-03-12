@@ -25,7 +25,7 @@ export default makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             // margin: '0 -10% 0 auto',
-            marginRight: '-12%',
+            marginRight: '-13%',
             display: 'flex',
             '& > *': {
                 marginRight: 30,
