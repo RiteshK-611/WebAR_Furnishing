@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Grid, styled, Paper, Typography } from '@material-ui/core'
+import { Grid, styled, Paper, Typography, useMediaQuery, useTheme } from '@material-ui/core'
 import { getProductDetails } from '../../redux/actions/productActions';
 import './style.css';
+import useStyles from './styles/ARViewStyle'
 import '@google/model-viewer/dist/model-viewer.min.js';
 import QRCode from 'qrcode.react'
 import hand from './assets/hand.png'
 
 const ARView = ({ match }) => {
   const { product } = useSelector(state => state.getProductDetails);
-
+  const classes = useStyles()
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('xs'));
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -38,7 +41,7 @@ const ARView = ({ match }) => {
   {
     return (
       <Grid container alignItems="center">
-        <Grid item>
+        <Grid item className={classes.arview}>
           <div className={ARView}>
             {
               product && Object.keys(product).length && 
@@ -101,7 +104,7 @@ const ARView = ({ match }) => {
           </div>
         </Grid>
         <Grid item lg={4} md={4}>
-          <Grid container direction="column" alignItems="center" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+          <Grid container direction="column" alignItems="center" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
             <Grid item>
               <Item>
                 {
@@ -125,6 +128,7 @@ const ARView = ({ match }) => {
                   <div style={{textAlign: 'left'}}>
                     INSTRUCTIONS
                     <ol>
+                        <li>Scan the above QR Code to open this page on your mobile device</li>
                         <li>Click on VIEW MODEL IN YOUR SPACE. This opens your camera</li>
                         <li>Hold your mobile first vertically then horizontally for 5 seconds each</li>
                         <li>Then show the camera your surroundings so that it can recognize and is able to place the marker</li>
