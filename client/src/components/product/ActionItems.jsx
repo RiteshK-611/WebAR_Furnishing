@@ -9,7 +9,7 @@ import {
 import { addToCart } from "../../redux/actions/cartActions";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-// import { useNavigate } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import useStyle from "./styles/actionItemsStyle";
 import { payUsingPaytm } from "../../service/api";
 import { post } from "../../utils/paytm";
@@ -17,7 +17,7 @@ import { post } from "../../utils/paytm";
 
 const ActionItems = ({ product }) => {
   const classes = useStyle();
-  // const history = useNavigate();
+  // const history = useHistory();
 
   const dispatch = useDispatch();
 
