@@ -1,7 +1,7 @@
 import { Box, makeStyles, Typography, Button } from "@material-ui/core";
 // import { mergeClasses } from '@material-ui/styles';
 // import { fontSize } from '@material-ui/system';
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const useStyle = makeStyles({
   component: {
@@ -34,7 +34,7 @@ const EmptyCart = () => {
   const emptycarturl =
     "https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90";
   const classes = useStyle();
-  const history = useNavigate();
+  const history = useHistory();
 
   const addItem = () => {
     history.push("/");
