@@ -46,7 +46,7 @@ const ARView = ({ match }) => {
             {
               product && Object.keys(product).length && 
               <model-viewer src={ require(`${product.arModel.android}`).default } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
-                ios-src={ require(`${product.arModel.ios}`).default }
+                // ios-src={ require(`${product.arModel.ios}`).default }
                 alt="A 3D model of an astronaut"
                 ar
                 auto-rotate
@@ -94,8 +94,7 @@ const ARView = ({ match }) => {
             {
               product && Object.keys(product).length &&
               <model-viewer src={ require(`${product.arModel.android}`).default }
-                // ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-                ios-src={ require(`${product.arModel.ios}`).default }
+                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
                 alt="A 3D model of an astronaut"
                 ar
                 auto-rotate

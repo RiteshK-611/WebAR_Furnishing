@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 import HeaderButtons from './HeaderButtons'
 import { Link } from 'react-router-dom'
 import useStyle from './styles/HeaderStyle'
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.webp'
 
 const Header = () => {
     const classes = useStyle();

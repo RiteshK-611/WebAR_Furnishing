@@ -5,7 +5,7 @@ import { GitHub } from '@material-ui/icons';
 // import Box from '@material-ui/core/Box';
 // import Typography from '@material-ui/core/Typography';
 // import Link from '@material-ui/core/Link';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.webp'
 
 const useStyles = makeStyles((theme) => ({
   rootBox: {
