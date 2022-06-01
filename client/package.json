@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.8.3",
     "async": "^3.2.2",
     "axios": "^0.21.1",
+    "eventsource": ">=2.0.2",
     "glob-parent": "^6.0.2",
     "immer": "^9.0.6",
     "qrcode.react": "^1.0.1",
@@ -24,8 +25,7 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
-    "web-vitals": "^2.1.4",
-    "eventsource": ">=2.0.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -52,6 +52,10 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "eventsource": ">=2.0.2"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   }
 }
