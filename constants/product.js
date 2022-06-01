@@ -63,7 +63,7 @@ export const products = [
   },
   {
     id: "product3",
-    url: "https://drive.google.com/uc?export=view&id=1eg5aIGx5pAGd7LuzM3_CbUJUmabXSl-c",
+    url: "https://drive.google.com/uc?export=view&id=1zJE4j3gOYyrQ8lbEx3_oMLQfNw20ULtz",
     detailUrl:
       "https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798",
     title: {
