@@ -13,7 +13,7 @@ const reducer = combineReducers({
 
 const middleware = [thunk];
 
-console.log("Middleware: ", middleware)
+// console.log("Middleware: ", middleware)
 
 const store = createStore(
     reducer, 

@@ -42,12 +42,13 @@ const ARView = ({ match }) => {
     return (
       <Grid container alignItems="center">
         <Grid item className={classes.arview}>
-          <div className={ARView}>
+          <div className={classes.jfs}>
             {
               product && Object.keys(product).length && 
-              <model-viewer src={ require(`${product.arModel.android}`).default } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
+              <model-viewer src={ require(`${product.arModel.android}`) } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
+                ios-src={ require(`${product.arModel.ios}`) }
                 // ios-src={ require(`${product.arModel.ios}`).default }
-                alt="A 3D model of an astronaut"
+                alt="A 3D model of the product"
                 ar
                 auto-rotate
                 camera-controls> 
@@ -90,12 +91,12 @@ const ARView = ({ match }) => {
     return (
       <Grid container spacing={0} direction="row" justifyContent="space-around" alignItems="center" style={{position: 'absolute', marginTop: 50}}>
         <Grid item lg={8} md={8}>
-          <div className={ARView}>
+          <div className={classes.jfs}>
             {
               product && Object.keys(product).length &&
-              <model-viewer src={ require(`${product.arModel.android}`).default }
-                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-                alt="A 3D model of an astronaut"
+              <model-viewer src={ require(`${product.arModel.android}`) }
+                ios-src={ require(`${product.arModel.ios}`) }
+                alt="A 3D model of the product"
                 ar
                 auto-rotate
                 camera-controls> 

@@ -5,10 +5,14 @@ export default makeStyles((theme) => ({
         // display: 'flex',
         [theme.breakpoints.down('sm')]: {
             // flexDirection: 'column',
-            // justifyContent: 'center',
+            justifyContent: 'center',
+            // alignItems: 'center',
             width: '100%',
             marginTop: 18,
         }
+    },
+    jfs: {
+
     }
     })
 )

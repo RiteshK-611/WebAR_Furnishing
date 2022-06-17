@@ -29,7 +29,7 @@ const Header = () => {
     else {
         return (
             <AppBar className={classes.header}>
-                <Toolbar style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+                <Toolbar style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
                     <Link to='/' className={classes.component}>
                         <img src={logo} alt="logo" className={classes.logo} />
                     </Link>

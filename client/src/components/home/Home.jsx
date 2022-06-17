@@ -12,7 +12,6 @@ import Footer from '../footer/Footer';
 const Home = () => {
     const classes = useStyle();
     const { products } = useSelector(state => state.getProducts);
-
     const dispatch = useDispatch();
 
     useEffect(() => {
