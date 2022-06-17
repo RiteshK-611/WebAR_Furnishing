@@ -29,7 +29,7 @@ const URL = `mongodb+srv://${username}:${password}@cluster0.p88y7.mongodb.net/ec
 Connection(process.env.MONGODB_URI || URL);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static('/client/build'));
+  app.use(express.static('client/build'));
 }
 
 app.listen(PORT, () =>
