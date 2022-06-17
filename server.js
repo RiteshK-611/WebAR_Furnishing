@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import dotenv from "dotenv";
 import Connection from "./database/db.js";
 import DefaultData from "./default.js";
@@ -28,7 +29,7 @@ const URL = `mongodb+srv://${username}:${password}@cluster0.p88y7.mongodb.net/ec
 Connection(process.env.MONGODB_URI || URL);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path_join(__dirname, '/client/build')));
+  app.use(express.static(path.join(__dirname, '/client/build')));
 }
 
 app.listen(PORT, () =>
