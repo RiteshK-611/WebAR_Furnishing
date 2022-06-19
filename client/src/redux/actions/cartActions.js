@@ -5,7 +5,7 @@ const url = "";
 
 export const addToCart = (id) => async (dispatch) => {
   try {
-    const { data } = await axios.get(`${url}/product/${id}`);
+    const { data } = await axios.get(`${url}/api/product/${id}`);
 
     /*  let tempProduct={}
         if(q){
