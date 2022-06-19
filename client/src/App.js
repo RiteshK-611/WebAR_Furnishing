@@ -20,9 +20,9 @@ function App() {
           <Box style={{ marginTop: 54 }}>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/cart" component={Cart} />
-              <Route path="/product/:id" component={DetailView} />
-              <Route path="/product/ar/:id" component={ARView} />
+              <Route exact path="/cart" component={Cart} />
+              <Route exact path="/product/:id" component={DetailView} />
+              <Route exact path="/product/ar/:id" component={ARView} />
             </Switch>
           </Box>
           {/* <Footer />   */}
