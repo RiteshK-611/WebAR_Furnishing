@@ -19,7 +19,7 @@ export const addToCart = (id) => async (dispatch) => {
     let tempProduct = {};
     tempProduct = { info: data, qty: 1 };
 
-    console.log("TempProduct: ", tempProduct.info.id);
+    // console.log("TempProduct: ", tempProduct.info.id);
 
     dispatch({ type: actionTypes.ADD_TO_CART, payload: tempProduct });
   } catch (error) {
