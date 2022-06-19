@@ -1,6 +1,4 @@
 import express from "express";
-import path from "path";
-import { fileURLToPath } from 'url';
 import dotenv from "dotenv";
 import Connection from "./database/db.js";
 import DefaultData from "./default.js";
@@ -8,9 +6,11 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import Routers from "./routes/routes.js";
 import { v4 as uuid } from "uuid";
+// import path from "path";
+// import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -31,15 +31,21 @@ const URL = `mongodb+srv://${username}:${password}@cluster0.p88y7.mongodb.net/ec
 
 Connection(process.env.MONGODB_URI || URL);
 
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "client/build")));
+// }
+
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")));
+  app.use(express.static("client/build"));
 }
 
-console.log('Dir_name:', __dirname);
-
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
+  res.sendFile("client/build/index.html");
 });
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "client/build/index.html"));
+// });
 
 app.listen(PORT, () =>
   console.log(`Server is successfully running on PORT ${PORT}`)
