@@ -5,14 +5,14 @@ import { addPaymentGateway, paymentResponse } from '../controllers/payment-contr
 
 const router = express.Router();
 
-router.post('/signup', userSignup);
-router.post('/login', userLogIn);
+router.post('/api/signup', userSignup);
+router.post('/api/login', userLogIn);
 
-router.get('/products', getProducts);
-router.get('/product/:id', getProductById);
+router.get('/api/products', getProducts);
+router.get('/api/product/:id', getProductById);
 
-router.post('/payment', addPaymentGateway);
-router.post('/callback', paymentResponse);
+router.post('/api/payment', addPaymentGateway);
+router.post('/api/callback', paymentResponse);
 
 
 //router.post('/addProduct', addNewProductToDb )
