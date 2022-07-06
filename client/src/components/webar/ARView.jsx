@@ -45,7 +45,7 @@ const ARView = ({ match }) => {
           <div className={classes.jfs}>
             {
               product && Object.keys(product).length && 
-              <model-viewer src={ require(`${product.arModel.android}`) } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
+              <model-viewer loading="eager" src={ require(`${product.arModel.android}`) } /* "https://github.com/RiteshK-611/webxr-ar/blob/main/assets/sofa.gltf" */
                 ios-src={ require(`${product.arModel.ios}`) }
                 // ios-src={ require(`${product.arModel.ios}`).default }
                 alt="A 3D model of the product"

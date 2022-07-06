@@ -13,13 +13,12 @@ const MidSection = ({products}) => {
                     <Grid item key={product.id} xs={12} sm={6} md={4}>
                         <Link to={`/product/${product.id}`} style={{textDecoration: 'none'}}>
                             <Card className={classes.card}>
-                                <CardActionArea>
-                                   <CardMedia
+                                <CardMedia
                                     className={classes.cardMedia}
                                     component="img"
                                     image={product.url}
-                                   />
-                                </CardActionArea>
+                                    title="product-image"
+                                />
                                 <CardContent className={classes.cardContent}>
                                    <Typography gutterBottom variant="body2" color="textSecondary" component="p" style={{color: "black"}}>
                                    {product.title.longTitle}

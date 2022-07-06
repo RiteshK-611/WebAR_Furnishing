@@ -8,7 +8,6 @@ export default makeStyles((theme) => ({
         marginBottom: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        // textTransform: 'none',
         textDecoration: 'none'
     },
     cardGrid: {
@@ -19,13 +18,17 @@ export default makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: '#fcfcfc'
+        backgroundColor: '#fcfcfc',
     },
     cardMedia: {
         height: 250,
         width: '100%',
-        objectFit: 'contain',
-        padding: 15
+        objectFit: 'cover',
+        padding: 15,
+        borderRadius: 20,
+        "&:hover": {
+            objectFit: 'contain',
+        }
     },
     cardContent: {
         flexGrow: 1,
