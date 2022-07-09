@@ -1,5 +1,4 @@
-import { Container, Grid, Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
-// import { CardActions, Button } from '@material-ui/core'
+import { Container, Grid, Card, CardContent, CardMedia, Typography } from '@material-ui/core'
 //import { products } from '../../constants/data'
 import useStyle from './styles/midSectionStyle'
 import { Link } from 'react-router-dom';
@@ -24,11 +23,6 @@ const MidSection = ({products}) => {
                                    {product.title.longTitle}
                                    </Typography>
                                 </CardContent>
-                                {/* <CardActions className={classes.button}>
-                                   <Button variant="contained" size="small" color="secondary">
-                                    Add to Cart
-                                   </Button>
-                                </CardActions> */}
                             </Card>
                         </Link>
                     </Grid>

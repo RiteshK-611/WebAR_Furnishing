@@ -1,5 +1,5 @@
-import { useState } from "react";
 import * as actionTypes from "../constants/cartConstant";
+// import { useState } from "react";
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
   const cartItemsFromLocalStorage = JSON.parse(

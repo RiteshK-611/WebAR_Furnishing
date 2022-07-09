@@ -1,18 +1,19 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Grid, styled, Paper, Typography, useMediaQuery, useTheme } from '@material-ui/core'
+import { Grid, styled, Paper, Typography } from '@material-ui/core'
 import { getProductDetails } from '../../redux/actions/productActions';
-import './style.css';
-import useStyles from './styles/ARViewStyle'
 import '@google/model-viewer/dist/model-viewer.min.js';
 import QRCode from 'qrcode.react'
+import useStyles from './styles/ARViewStyle'
+import './style.css';
 import hand from './assets/hand.png'
+// import { useMediaQuery, useTheme } from '@material-ui/core'
 
 const ARView = ({ match }) => {
   const { product } = useSelector(state => state.getProductDetails);
   const classes = useStyles()
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('xs'));
+  // const theme = useTheme();
+  // const matches = useMediaQuery(theme.breakpoints.down('xs'));
   const dispatch = useDispatch();
 
   useEffect(() => {
