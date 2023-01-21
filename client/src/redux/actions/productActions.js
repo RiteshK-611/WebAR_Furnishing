@@ -1,7 +1,7 @@
 import * as actionTypes from "../constants/productConstants";
 import axios from "axios";
 
-const url = "";
+const url = process.env.REACT_APP_SERVER_URL || "";
 
 export const getProducts = () => async (dispatch) => {
   try {
