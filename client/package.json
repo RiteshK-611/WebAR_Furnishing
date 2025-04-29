@@ -12,7 +12,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "async": "^3.2.2",
-    "axios": "^1.7.4",
+    "axios": "^1.8.2",
     "eventsource": ">=2.0.2",
     "glob-parent": "^6.0.2",
     "immer": "^9.0.6",
