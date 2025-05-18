@@ -15,7 +15,7 @@ export const products = [
     // }
     // images & models are to be stored in google drive as per product id
     id: "product1",
-    url: "https://drive.google.com/uc?export=view&id=1foraAQ7HiXmKeeLgAVagr9bbPRdwpP2K",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/blueSofa.webp",
     detailUrl:
       "https://media.architecturaldigest.com/photos/5b68b771e4ca455528fdf8c5/master/w_1600%2Cc_limit/The%252520Inside%252520Banana%252520Palm%252520Cocktail%252520Ottoman.jpg",
     title: {
@@ -39,7 +39,7 @@ export const products = [
   },
   {
     id: "product2",
-    url: "https://drive.google.com/uc?export=view&id=1pTc3FIvvxa47mEa6gTnwU9qXPFSWL12l",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/asian-bedroom.webp",
     detailUrl:
       "https://theinside.imgix.net/products/wwvaP49iXb4Bi1zkitKQqXRIxsG13KFDvIGjOXtO.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798",
     title: {
@@ -63,7 +63,7 @@ export const products = [
   },
   {
     id: "product3",
-    url: "https://drive.google.com/uc?export=view&id=1zJE4j3gOYyrQ8lbEx3_oMLQfNw20ULtz",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/redShelf.webp",
     detailUrl:
       "https://theinside.imgix.net/products/kpxIMiSq2vBLRGgXeJDTFdUCq4kXvJ9M0cBBavmd.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798",
     title: {
@@ -87,7 +87,7 @@ export const products = [
   },
   {
     id: "product4",
-    url: "https://drive.google.com/uc?export=view&id=1SqAht7sZrPW9anGP12Di800nonjdqZ26",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/bigGreenChair.webp",
     detailUrl:
       "https://theinside.imgix.net/products/XLpm4BetCFMVtJ38O8NrteCXfEO9dmeyF8uEq90H.jpeg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798",
     title: {
@@ -111,7 +111,7 @@ export const products = [
   },
   {
     id: "product5",
-    url: "https://drive.google.com/uc?export=view&id=1-9r382GZuDSLfS_aY_AHKyhmPc_yp9rj",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/grayLsofa.webp",
     detailUrl:
       "https://theinside.imgix.net/products/T7Q5i5CGOFTSim4uEiYvbE22bdllyIPISXhsLpA1.jpg?auto=compress%2Cformat&ixlib=react-9.0.3&w=798",
     title: {
@@ -135,7 +135,7 @@ export const products = [
   },
   {
     id: "product6",
-    url: "https://drive.google.com/uc?export=view&id=1abjWa8UtdvRZpVOmy5LQtOrdOGqxgINg",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/coconchair.webp",
     detailUrl:
       "https://theinside.imgix.net/products/8THjKHm3ai2WR5HsAIcurqUp44hBBdpFCxQaf3Lf.jpeg?auto=format",
     title: {
@@ -159,7 +159,7 @@ export const products = [
   },
   {
     id: "product7",
-    url: "https://drive.google.com/uc?export=view&id=1o8IFtXvVOtU4-hHY24aGDA-BRw2TG21g",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/rusticChair.webp",
     detailUrl:
       "https://theinside.imgix.net/products/hTxiNKszpquAWAiyYiOVXcvKzFeYj9ucoJqEYIvU.jpeg?auto=format",
     title: {
@@ -183,7 +183,7 @@ export const products = [
   },
   {
     id: "product8",
-    url: "https://drive.google.com/uc?export=view&id=1wo8OuQtb8XxGOvQGSAUNk5Ar-YCAt9Qs",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/sideTable.webp",
     detailUrl:
       "https://theinside.imgix.net/products/cOmZCuJ0FIXUu3wh6JmD8c3UIJ25VqMyJ7WPZyh3.jpg?auto=format",
     title: {
@@ -206,7 +206,7 @@ export const products = [
   },
   {
     id: "product9",
-    url: "https://drive.google.com/uc?export=view&id=1ZmeUXEG8D6GtkPfahUhAU4-DRdOeXeDY",
+    url: "https://webar-furnishing.s3.us-west-1.amazonaws.com/product_images/nightStand.webp",
     detailUrl:
       "https://theinside.imgix.net/products/dSm1MDj2F0Chyf4TzIsnYG1wvm9Bc76KEUSufrkn.jpg?auto=format",
     title: {
